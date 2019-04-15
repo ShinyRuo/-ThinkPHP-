@@ -1,0 +1,200 @@
+<extend name="index" />
+
+<block name="change">
+
+<script>
+	function jia(id){
+		
+		var t =document.getElementById('qian'+id).value;
+
+		if(t>=999){
+			alert('最多只能买999张！！');
+			}else{
+	  var ot=parseInt(t)+1;
+	    
+		document.getElementById('qian'+id).value=ot;
+	}
+}
+	function jian(id){
+	
+	  var t =document.getElementById('qian'+id).value;
+	   if(t==1){
+	     alert('最少购买一张！！');
+		 }else{
+	  var ot=parseInt(t)-1;
+	    
+		document.getElementById('qian'+id).value=ot;
+	}
+}
+</script>
+<script>
+    $(function(){
+		$('.img_wushi').click(function(){
+		var r=confirm('您确定购买吗？');
+			if(r==true){
+				$('form[name="myForm1"]').submit();
+			}else{
+		    alert('谢谢您对本站的支持！！');
+		}
+		});
+		$('#img_yibai').click(function(){
+		var r=confirm('您确定购买吗？');
+		   if(r==true){
+			   $('form[name="myForm2"]').submit();
+		   }else{
+	        alert('谢谢您对本站的支持！！');
+	     }
+		});
+			$('#img_erbai').click(function(){
+				var r=confirm('您确定购买吗？');
+				if(r==true){
+					$('form[name="myForm3"]').submit();
+				}else{
+			 alert('谢谢您对本站的支持！！');
+			
+			}
+		});
+			$('#img_wubai').click(function(){
+				var r=confirm('您确定购买吗？');
+				if(r==true){
+					$('form[name="myForm4"]').submit();
+				}else{
+			    alert('谢谢您对本站的支持！！');
+			}
+		});
+	
+	});
+</script>
+
+
+	<!-- Start current auction list -->
+	<div class="container">
+		<div class="tabview"><h1 class="title fl"> 尊敬的：<{$Think.session.username}>,您的余额为<span style="color:red;line-height:100px;"><{$arr.0.money}></span>元</h1></div>
+				
+				<div class="content">
+				
+			
+					
+					<table class="chart notice">
+					  <tr>
+					    <th scope="col" width="40%">点卡</th>
+					    <th scope="col" width="15%">原价(元)</th>
+					    <th scope="col" width="15%">折扣</th>
+					    <th scope="col" width="15%">购买数量(张)</th>
+					    <th scope="col" width="15%">操作</th>
+					  </tr>
+					 
+					  <!-- start iterator -->
+					 <form action='__URL__/wushi'method='post'name='myForm1' >  
+					  <tr>
+					    <td align="center" height="110px">
+					    	<img src="__PUBLIC__/Home/Images/common/paidian_50.png" width="164px" height="98px" alt="好拍网50元点卡" title="好拍网50元点卡"/>
+					    </td>
+					    
+					    <td align="center"  class="f18" style="font-weight:bolder;">
+					    	&yen;50.00
+					    </td>
+					    
+					    <td align="center" style="color:#FF9900;font-weight:bolder;" class="f18">
+					    	100%
+					    </td>
+					    
+						
+						<td align="center" style="font-weight:bolder;" class="price f18">
+							<div class='jia' style='width:13px;height:13px;float:left;margin-left:5px;cursor:pointer'onclick='jia(1)'>+</div>
+							
+							<input type='text' name='wushi'id='qian1'style="width:50px;" value='1'readonly='readonly'/><div class='jian' style='cursor:pointer;font-size:2em;width:13px;height:13px;float:right;line-height:15px'onclick='jian(1)'>-</div>
+					    </td>
+					    
+					    <td align="center">
+			  				
+								<img class="img_wushi" src='__PUBLIC__/Home/Images/common/goumai.png' width='70'height='30'style='cursor:pointer'/>
+						
+					    </td>
+					  </tr>
+				  </form>
+				  <form action='__URL__/yibai' method='post' name='myForm2'>
+					  <tr>
+					    <td align="center" height="110px">
+					    	<img src="__PUBLIC__/Home/Images/common/paidian_100.png" width="164px" height="98px" alt="好拍网100元点卡" title="好拍网100元点卡"/>
+					    </td>
+					    
+					    <td align="center"  class="f18" style="font-weight:bolder;">
+					    	&yen;100.00
+					    </td>
+					    
+					    <td align="center" style="color:#FF9900;font-weight:bolder;" class="f18">
+					    	100%
+					    </td>
+					    
+					    <td align="center" style="font-weight:bolder;" class="price f18">
+					<div class='jia' style='width:13px;height:13px;float:left;margin-left:5px;cursor:pointer'onclick='jia(2)'>+</div><input type='text' name='yibai'id='qian2'style="width:50px;" value='1'readonly='readonly'/><div class='jian' style='cursor:pointer;font-size:2em;width:13px;height:13px;float:right;line-height:15px'onclick='jian(2)'>-</div>
+					    </td>
+					
+
+					    <td align="center">
+			  		
+								<img id="img_yibai"src='__PUBLIC__/Home/Images/common/goumai.png' width='70'height='30' style='cursor:pointer'/>
+						
+					    </td>
+					  </tr>
+				  </form>
+				  <form action='__URL__/erbai' method='post' name='myForm3'>
+					  <tr>
+					    <td align="center" height="110px">
+					    	<img src="__PUBLIC__/Home/Images/common/paidian_200.png" width="164px" height="98px" alt="好拍网200元点卡" title="好拍网200元点卡"/>
+					    </td>
+					    
+					    <td align="center"  class="f18" style="font-weight:bolder;">
+					    	&yen;200.00
+					    </td>
+					    
+					    <td align="center" style="color:#FF9900;font-weight:bolder;" class="f18">
+					    	100%
+					    </td>
+					    
+					    <td align="center" style="font-weight:bolder;" class="price f18">
+					    <div class='jia' style='width:13px;height:13px;float:left;margin-left:5px;cursor:pointer'onclick='jia(3)'>+</div><input type='text' name='erbai'id='qian3'style="width:50px;" value='1' readonly='readonly'/><div class='jian' style='cursor:pointer;font-size:2em;width:13px;height:13px;float:right;line-height:15px'onclick='jian(3)'>-</div>
+					    </td>
+					    
+					    <td align="center">
+			  				
+								<img src='__PUBLIC__/Home/Images/common/goumai.png' width='70'height='30' id="img_erbai" style='cursor:pointer' />
+						
+					    </td>
+					  </tr>
+				  </form>
+				  <form action='__URL__/wubai' method='post' name='myForm4'>
+					  <tr>
+					    <td align="center" height="110px">
+					    	<img src="__PUBLIC__/Home/Images/common/paidian_500.png" width="164px" height="98px" alt="好拍网500元点卡" title="好拍网500元点卡"/>
+					    </td>
+					    
+					    <td align="center"  class="f18" style="font-weight:bolder;">
+					    	&yen;500.00
+					    </td>
+					    
+					    <td align="center" style="color:#FF9900;font-weight:bolder;" class="f18">
+					    	100%
+					    </td>
+					    
+					    <td align="center" style="font-weight:bolder;" class="price f18">
+					    <div class='jia' style='width:13px;height:13px;float:left;margin-left:5px;cursor:pointer'onclick='jia(4)'>+</div><input type='text' name='wubai'id='qian4'style="width:50px;" value='1'readonly='readonly'/><div class='jian' style='cursor:pointer;font-size:2em;width:13px;height:13px;float:right;line-height:15px'onclick='jian(4)'>-</div>
+					    </td>
+					    
+					    <td align="center">
+			  			
+								<img src='__PUBLIC__/Home/Images/common/goumai.png' width='70'height='30' id="img_wubai"  style='cursor:pointer'/>
+					
+					    </td>
+					  </tr>
+				  </form>
+					  <!-- end iterator -->
+				</table>
+	
+				</div>
+				
+			</div>
+	<!-- End current auction list -->
+
+	</block>

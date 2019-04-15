@@ -1,0 +1,78 @@
+<extend name="index" />
+
+<block name="change">
+		<!-- Start current auction list -->
+		<div class="container">
+			<div class="tabview"><h2 class="title fl">个人资料</h2></div>
+			
+			
+				<div class="content">
+					
+				<div class="mb_tb_form">
+				<form name="mbform" id="mbform" action="complete" method="post">
+				<table class="mb_tb">
+					
+					<tr>
+					  	<td class="td_title">账号：</td>
+					  	<td>
+							<input type="text" disabled="disabled" value="<{$data.0.username}>" style="width: 201px;height:23px;" class="input input-disabled" name="username" id="account" />
+					  	</td>
+					  	
+					  </tr>
+				
+					  <tr>
+					  	<td class="td_title">昵称：</td>
+					  	<td>					  	  
+							<input type="text"  value="<{$data.0.nickname}>" style="width: 201px; height:23px;color:black" class="input input-disabled" name="nickname" id="nickname" />
+					  	</td>
+					  	
+					  </tr>
+				
+					  <tr>
+					  	<td class="td_title">QQ：</td>					  	
+					  	<td>					  	  
+							<input type="text" value="<{$data.0.qq}>" style="width: 201px;height:23px ;color:black" class="input" name="qq" id="qq" />
+					  	</td>
+					  	
+					  </tr>
+					  
+					  <tr>
+					  	<td class="td_title">邮箱：</td>					  	
+					  	<td>					  	  
+							<input type="text" value="<{$data.0.email}>" style="width: 201px; height:23px;color:black" class="input" name="email" id="email" /><{$v}>
+					  	</td>
+					  	
+					  </tr>
+					  
+					  <tr>
+					  	<td class="td_title">性别：</td>					  	
+						<td>
+							<if condition="($data[0]['sex']==1)">
+							<label class="fl"><input type="radio" class="radio"	name="sex" value="1" checked />	帅哥</label>
+							<label class="fl"><input type="radio" class="radio"	name="sex" value="0" />	美女</label> 
+						  <else/>
+                           	<label class="fl"><input type="radio" class="radio"	name="sex" value="1" checked />	帅哥</label>
+							<label class="fl"><input type="radio" class="radio"	name="sex" value="0" />	美女</label> 
+							</if>
+						</td>
+					  	
+					  </tr>
+					  
+					
+					  
+					  
+					  <tr>
+					  	<td colspan="3"  class="mb_saveBtn">
+					  	<span class="button button-hilite">
+							<button id="subBtn" class="strong" type="submit">保存</button>
+						</span>
+					  	</td>
+					  </tr>
+					</table>
+					</form>
+				</div>
+			</div>
+					
+		</div>
+		<!-- End current auction list -->
+</block>

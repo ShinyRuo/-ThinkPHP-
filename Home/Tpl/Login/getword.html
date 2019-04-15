@@ -1,0 +1,61 @@
+<include file="./Home/Tpl/Common/header.html" />
+
+	<!-- #register -->
+	<div id="register" class="mainbody clearfix mbWrap">
+	
+		<form name="loginForm" action="getMibao" method="post">
+		<div id="loginContainer" class="container" >
+
+			<div class="tabview">
+
+				<h2 class="title fl">忘记密码</h2>
+			</div>
+			
+			<div class="loginContent" id="pwdPage" style="height:320px;"> 	
+				<div class="leftinfo">
+					<div class="inputWrap" style="margin-top:10px;">
+						<label for="account" style="font-size:14px;font-weight:bolder;">您的用户名:</label>
+						<input id="m_username" name="m_username" type="text" class="input" style="width:276px;"  />
+							<label for="account" style="font-size:14px;font-weight:bolder;">您所设置的密保:</label>
+						 <select name='question'>
+							   <option value='1'>你父亲的名字？</option>
+							   <option value='2'>你母亲的的名字？</option>
+							   <option value='3'>你爱人的名字？</option>
+							   <option value='4'>你最喜欢的宠物？</option>
+							   <option value='5'>你见过最漂亮的女生？</option>
+							   <option value='6'>你的女神是谁？</option>
+							   <option value='7'>你的第一次是什么时候？</option>
+							   <option value='8'>你最喜欢的姿态？</option>
+							   <option value='9' selected>你怎么理解草泥马的？</option>
+							   <option value='10'>你信春哥吗？</option>
+							 
+						   </select>
+						  	<label for="account" style="font-size:14px;font-weight:bolder;">您所写的答案:</label>
+						<input id="m_answer" name="m_answer" type="text" class="input" style="width:276px;" /> 
+						<span id="accountTip"></span>
+	
+					</div>
+					
+					<div class="inputWrap cb" style="width:67px;float:left;">
+						<span class="button button-hilite" id='sendbtn'>
+							<span class="first-child" >
+								<button id="subBtn" type="submit" class="strong">确定</button>
+							</span>
+						</span>
+				</div>
+				
+				<div class="rightInfoShow">
+				
+				</div>
+				
+			</div>
+			
+		  </div>
+		  </div>
+		</form>
+	
+	
+	</div>
+	<!-- #register end -->
+
+<include file="./Home/Tpl/Common/_footer.html" />

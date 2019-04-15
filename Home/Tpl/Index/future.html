@@ -1,0 +1,76 @@
+<include file="./Home/Tpl/Common/header.html" />
+
+	<!-- #auctionDetail -->
+	<div id="auctionDetail" class="mainbody clearfix">
+	
+		
+		<div id="subpageBanner" class="page960">
+			<a  href="" tppabs="http://game.haopai365.com/app/register" >
+				<img src="__PUBLIC__/Home/Images/a-d/1296011542.jpg" tppabs="http://game.haopai365.com/static/a-d/1296011542.jpg" alt="好拍网、注册得拍点，快来参与秒杀、拍卖吧！" width="960px" height="120px" border="0"/></a>
+			</a>		
+		</div>
+		
+
+		<!-- #productList -->
+		<div id="productList" class="container clearfix">
+	
+			<div class="tabview">
+				<h2 class="title fl">即将推出的商品</h2>
+			</div>
+
+			<div class="content">
+			
+				<table class="chart">
+				<tr>
+				<th width="64%" class="tc">商品</th>
+				<th width="36%" class="tc">开拍时间</th>
+				</tr>
+				<!--Start: iterator  -->
+				
+				<foreach name="future" item="vo">
+						<tr class="AuctionHOR">
+							<td>
+								<div class="proImg">
+									<a>
+										<img style="width:120px;height:80px;" alt="好拍网拍卖成功、545金 魔兽世界 一区 阿尔萨斯" src="__PUBLIC__/Uploads/pics/b_<{$vo.pic}>" />
+									</a>
+								</div>
+								
+								<div class="detail notice" style="margin-left:15px;">
+									<h3>
+										<span >大区：<{$vo.dq}> | 职业：<{$vo.zy}> | 部件：<{$vo.bj}></span>
+
+									</h3>
+									<strong>起拍价：<{$vo.price}></strong><br />
+									<span class="space">商品名称：<strong class="purchase space"><{$vo.eqname}></strong></span>
+									卖家：<span style="color:red"><{$vo.username}></span><br />
+									<span>商品简介：<{$vo.eqdes}></span>
+								</div>
+							</td>
+								
+							<td class="tc">		
+								<span><{$vo.starttime|date="Y-m-d H:i:s",###}></span>
+							</td>
+						</tr>
+				</foreach>
+				
+				<!--End: iterator  -->
+				
+				<tr>
+					<td colspan="3">
+						<!-- .pages -->
+							<{$page}>
+						<!-- .pages end -->
+					</td>
+				</tr>
+				</table>
+				
+			</div>
+	
+		</div>
+		<!-- #productList end -->
+
+	</div>
+	<!-- #auctionDetail end -->
+
+<include file="./Home/Tpl/Common/_footer.html" />

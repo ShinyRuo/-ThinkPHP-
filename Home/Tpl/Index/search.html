@@ -1,0 +1,259 @@
+<include file="./Home/Tpl/Common/header.html" />
+
+	<!-- #auctionDetail -->
+	<div id="auctionDetail" class="mainbody clearfix">
+	
+		
+		<div id="subpageBanner" class="page960">
+			<a target="_blank" href="/app/register" >
+				<img src="__PUBLIC__/Home/Images/a-d/1296011542.jpg" alt="好拍网、注册得拍点，快来参与秒杀、拍卖吧！" width="960px" height="120px" border="0"/></a>
+			</a>		
+		</div>
+		
+		<!-- #productList -->
+		<div id="productList" class="container">
+	
+			<div class="tabview">
+				<h2 class="title fl">搜索结果</h2>
+			</div>
+			
+			
+			<div class="content">
+
+			<table class="chart">
+				<tr>
+				<th width="64%" class="tc">商品</th>
+				<th width="36%" class="tc">状态</th>
+				</tr>
+				<!--Start: iterator  -->
+				
+			<foreach name="list" item="vo">
+
+						<tr class="AuctionHOR EndingAuction">
+							<td>
+								<div class="proImg">
+									
+									<img style="width:120px;height:80px;" alt="<{$vo.eqdes}>" src="__PUBLIC__/Uploads/pics/b_<{$vo.pic}>" tppabs="http://game.haopai365.com/upload/product/201112/10/1323448840181.jpgmiddle.jpg"  />
+									
+								</div>
+								
+								<div class="detail notice" style="margin-left:15px;">
+									<h3>
+										<span >大区：<{$vo.dq}> | 职业：<{$vo.zy}> | 部件：<{$vo.bj}></span>
+
+									</h3>
+									<strong>起拍价：<{$vo.price}></strong><br />
+									<span class="space">商品名称：<strong class="purchase space"><{$vo.eqname}></strong></span>
+									卖家：<span style="color:red"><{$vo.username}></span><br />
+									<span>商品简介：<{$vo.eqdes}></span>
+								</div>
+							</td>
+							
+							<td class="tc">		
+								<span>
+									<if condition="$vo.endtime lt time()" > 已结束
+									<elseif condition="($vo.starttime ELT time() and $vo.endtime GT time())" /> <a href="__URL__/info/id/<{$vo.id}>">竞拍中</a>
+									<else />即将竞拍
+									</if>
+								</span>
+							</td>
+						</tr>
+				
+			</foreach>
+
+				
+				<!--End: iterator  -->
+				
+				<tr>
+				<td colspan="3">
+					<!-- .pages -->
+						<{$page}>
+					<!-- .pages end -->
+				</td>
+				</tr>
+				</table>
+				
+				
+				<!-- games nav start -->
+				<div style="position:absolute;top:0px;display:none;" id="searchPangel">
+<div id="games" class="gamesNav" style="display:none;">
+    	<h3 class="navHeader">&nbsp;</h3>
+        <div class="other-links">
+                  <a title="关闭"  href="javascript:closePanelDef(1);">关闭</a>
+        </div>
+              
+              <ul class="wordIndex" id="wordIndex">
+                      <li class="first hot" id="hot">热</li>
+                       <li id="1" >A</li>
+<li id="2" >B</li>
+<li id="3" >C</li>
+<li id="4" >D</li>
+<li id="5" >E</li>
+<li id="6" >F</li>
+<li id="7" >G</li>
+<li id="8" >H</li>
+<li id="9" >I</li>
+<li id="10" >J</li>
+<li id="11" >K</li>
+<li id="12" >L</li>
+<li id="13" >M</li>
+<li id="14" >N</li>
+<li id="15" >O</li>
+<li id="16" >P</li>
+<li id="17" >Q</li>
+<li id="18" >R</li>
+<li id="19" >S</li>
+<li id="20" >T</li>
+<li id="21" >U</li>
+<li id="22" >V</li>
+<li id="23" >W</li>
+<li id="24" >X</li>
+<li id="25" >Y</li>
+<li id="26" >Z</li>
+<li id="27" >其他</li>
+
+        </ul>
+    	
+    
+    <div class="navBody" id="navBody" style="display: block;" >
+         <ul id="gamesItems">
+                
+                		   <li pid="1" id="31">艾尔之光</li>
+                		
+                		   <li pid="2" id="42">白蛇传说</li>
+                		
+                		   <li pid="3" id="52">赤壁</li>
+                		
+                		   <li pid="3" id="54">传奇3</li>
+                		
+                		   <li pid="4" id="79">地下城与勇士</li>
+                		
+                		   <li pid="4" id="80">大唐无双</li>
+                		
+                		   <li pid="4" id="83">大话西游Ⅲ</li>
+                		
+                		   <li pid="7" id="140">古域OL</li>
+                		
+                		   <li pid="10" id="223">剑侠情缘Ⅲ</li>
+                		
+                		   <li pid="10" id="225">巨人</li>
+                		
+                		   <li pid="10" id="226">九阴真经</li>
+                		
+                		   <li pid="12" id="241">龙之谷</li>
+                		
+                		   <li pid="12" id="244">绿色征途</li>
+                		
+                		   <li pid="13" id="276">魔兽世界(国服)</li>
+                		
+                		   <li pid="13" id="277">魔域</li>
+                		
+                		   <li pid="13" id="278">梦幻西游</li>
+                		
+                		   <li pid="14" id="324">诺亚传说</li>
+                		
+                		   <li pid="17" id="334">倩女幽魂</li>
+                		
+                		   <li pid="17" id="338">QQ西游</li>
+                		
+                		   <li pid="17" id="339">QQ仙侠传</li>
+                		
+                		   <li pid="19" id="385">神魔大陆</li>
+                		
+                		   <li pid="20" id="452">天下3</li>
+                		
+                		   <li pid="23" id="497">完美国际</li>
+                		
+                		   <li pid="23" id="503">万王之王3</li>
+                		
+                		   <li pid="23" id="513">完美传奇</li>
+                		
+                		   <li pid="24" id="518">新梦幻诛仙</li>
+                		
+                		   <li pid="24" id="521">星辰变OL</li>
+                		
+                		   <li pid="25" id="557">永恒之塔</li>
+                		
+                		   <li pid="25" id="574">英雄联盟</li>
+                		
+                		   <li pid="26" id="575">诛仙前传</li>
+                		
+                		   <li pid="26" id="576">征途2</li>
+                		
+                		   <li pid="26" id="580">卓越之剑2</li>
+                		
+         </ul>
+    </div>
+</div>		
+
+<div id="areaNav"  class="gamesNav" style="display:none;">
+    	<h3 class="navHeader">选择游戏区</h3>
+        <div class="other-links">
+             <a title="关闭"  href="javascript:closePanelDef(2);">关闭</a>
+        </div>
+              
+    
+    <div class="navBody" id="areaItemsParent">
+        <ul id="areaItems">
+        </ul>
+    </div>
+</div>		
+	
+<div id="serverNav"  class="gamesNav" style="display:none;">
+    	<h3 class="navHeader">选择游戏服务器</h3>
+        <div class="other-links">
+             <a title="关闭"  href="javascript:closePanelDef(3);">关闭</a>
+        </div>
+              
+    
+    <div class="navBody" id="serverNavParent">
+        <ul id="serverItems">
+        </ul>
+    </div>
+</div>			
+
+
+<div id="productTypeNav"  class="gamesNav" style="display:none;">
+    	<h3 class="navHeader">选择物品</h3>
+        <div class="other-links">
+             <a title="关闭"  href="javascript:closePanelDef(0);">关闭</a>
+        </div>
+              
+    
+    <div class="navBody">
+        <ul>
+	    	
+            		<li id="1">点卡</li>
+					
+            		<li id="2">游戏币</li>
+					
+            		<li id="3">代练</li>
+					
+            		<li id="4">装备</li>
+					
+            		<li id="5">武器</li>
+					
+            		<li id="6">饰品</li>
+					
+            		<li id="7">坐骑</li>
+					
+            		<li id="8">其他道具</li>
+					
+        </ul>
+    </div>
+</div>		
+	
+</div>
+		
+</div>
+				<!-- games nav end -->
+				
+			</div>
+	
+		</div>
+		<!-- #productList end -->
+
+	</div>
+	<!-- #auctionDetail end -->
+
+<include file="./Home/Tpl/Common/_footer.html" />

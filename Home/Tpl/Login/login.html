@@ -1,0 +1,110 @@
+<include file="./Home/Tpl/Common/header.html" />
+
+<script type="text/javascript"> 
+	$(function(){
+
+	
+		$('input[name="username"]').blur(function(){
+			
+			if($(this).val() == ''){
+				$('input[name="username"]').after("<span class='user'style='color:red'>*用户名不能为空</span>");
+				}
+			
+		});
+
+		$('input[type="password"]').blur(function(){
+			var pwd = $('input[name="password"]').val();
+		
+			if(pwd==''){
+				$('input[name="password"]').after('<span class="pwd"style="color:red">*密码不能为空</span>');
+			}
+		});
+       	$('input[name="username"]').focus(function(){
+			$('.user').remove();
+		});
+
+		$('input[type="password"]').focus(function(){
+			$('.pwd').remove();
+		});
+
+		 
+	});
+</script>
+
+
+	
+	<!-- #register -->
+	<div id="register" class="mainbody clearfix mbWrap">
+	
+		<form name="loginForm" id="loginForm" action="__URL__/doLogin" method="post">
+			<div id="loginContainer" class="container" >
+
+				<div class="tabview">
+
+					<h2 class="title fl">用户登录</h2>
+				</div>
+				
+				<div class="loginContent"> 	
+					<div class="leftinfo">
+						<div class="inputWrap">
+							<label for="account">用户名:</label>
+							<input type="text"  name="username"  class="input" style="width:199px;"  value=""/>
+							<div id="accountTip"></div>
+		
+						</div>
+						
+						<div class="inputWrap type2">
+							<label for="password">密码:</label>
+							<input id="password" name="password" type="password" class="input" style="width:200px;" />
+							<div id="passwordTip"></div>
+		
+						</div>				
+						
+						<div id="verifycodeInput" style="width:400px;height:50px;">
+							
+							<div class="fl" >
+								<label for="vcode" style="width:60px;">验证码:</label>
+								<input type="text" class="input fl space" id="vcode" name="vcode" style="width:60px;" />
+							</div>
+						<div class="fl" style="float:left; margin-top:18px;"><img id="captchaPic" src="__APP__/Login/verify/" title="点击刷新验证码"  style="cursor:pointer;" onclick="this.src=this.src+'?'+Math.random()"/></div>
+							<div class="fl" style="padding-top:20px;"></div>
+						</div>
+						
+						<div id="vcodeTip" style="margin-bottom:15px;"></div>
+						
+						<div class="inputWrap cb" style="width:67px;float:left;">
+							<span class="button button-hilite" id='sendbtn'>
+								<span class="first-child" >
+									<button id="subBtn" type="submit" class="strong">登录</button>
+								</span>
+							</span>
+						</div><span class="fl" style="padding-top:12px;"><a href="__APP__/Login/getword">忘记密码？</a>	&nbsp;&nbsp;<a href="__APP__/Register/register" tppabs="http://game.haopai365.com/app/register">注册账号</a></span>
+					</div>
+					
+					<div class="rightInfoShow" id="rightShow">
+						<!--
+						<script type="text/javascript">
+
+							google_ad_client = "ca-pub-5803082307936853";
+							/* 登录区_1 */
+							google_ad_slot = "9945634626";
+							google_ad_width = 336;
+							google_ad_height = 280;
+							
+							</script>
+						<script type="text/javascript"
+							src=" ./Public/Home/Js/show_ads.js" tppabs="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+						</script>
+						-->
+					</div>
+					
+				</div>
+				
+			</div>
+		</form>
+	
+	
+	</div>
+	<!-- #register end -->
+
+<include file="./Home/Tpl/Common/_footer.html" />

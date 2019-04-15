@@ -1,0 +1,101 @@
+<extend name="index" />
+
+<block name="change">
+
+	<!-- Start current auction list -->
+	<div class="container">
+				<div class="tabview"><h2 class="title fl">竞拍历史</h2></div>
+				
+<!-- 				<div class="clearfix" id="filterTool">
+					<form name="searchForm" action="/app/homepage/joinperiod" method="post">
+						<div style="margin:5px 10px;height:20px;width:auto;float:left;line-height:25px;">
+							拍卖时间 ：<input type="text" name="startTime" id="startTime" class="input" value="" />
+							- <input type="text" name="endTime" id="endTime" class="input" value="" />
+						</div>
+						
+						<div style="margin:5px 0px;width:50px;height:20px;float:left;line-height:25px;">
+							<input type="submit" class="sendReq fl" value="查询" />
+						</div>
+						
+					</form>
+				</div> -->
+				
+				<div class="content">
+					
+					<table class="chart notice">
+					  <tr>
+					    <th scope="col" width="90">商品图片</th>
+					    <th scope="col" width="12%">商品名称</th>
+					    <th scope="col" width="12%">被拍次数</th>
+					    <th scope="col" width="12%">我的出价</th>
+
+					    <th scope="col" width="12%">成交价格 </th>
+					    <th scope="col" width="22%">结束时间 </th>
+					    <th scope="col">拍卖状态 </th>
+					  </tr>
+					  
+					   <tr><td colspan="8">&nbsp;</td></tr>
+					 
+					  <!-- start iterator -->
+				<foreach name="auctionhistory" item="vo">		
+					  
+					<tr>
+					    <td align="center" height="67px" >
+					    	<a href="">
+								<img style="width:50px;height:40px;" src="__PUBLIC__/Uploads/pics/b_<{$vo.pic}>" alt="900金 魔兽世界三区灰谷" />
+							</a>
+					    </td>
+					    
+					    <td align="center">
+							<{$vo.eqname}>
+					    </td>
+					    
+					    <td align="center" class="price">
+							<span id="price_58373" title="被拍次数"><{$vo.autimes}></span>
+					    </td>
+					    
+					    <td align="center">
+							<span style="color:#C31A1F;" id="end_count_58373"><{$vo.aumoney}></span>
+					    </td>
+					    				    
+					    
+					    <td align="center" style="color:#C31A1F;">
+							<{$vo.auction.0.aumoney}>
+					    </td>
+					    
+					    
+					    <td align="center">
+							<{$vo.endtime|date="Y-m-d H:i:s",###}>
+					    </td>
+					    
+					    <td align="center">
+						<if condition="$vo['aumoney'] == $vo['auction'][0]['aumoney']">
+								<span style='color:green'>成功拍取</span>
+						<else />
+								<span style='color:#C31A1F;'>竞拍失败</span>
+						</if>
+					    </td>
+
+					 </tr>
+
+				</foreach>			
+					  <!-- end iterator -->
+				</table>
+				
+				<!-- .pages --这里准备分页-->			
+					<{$page}>
+				<!-- .pages end -->
+				
+				</div>
+			</div>
+	<!-- End current auction list -->
+
+
+<script type="text/javascript" language="javascript">
+$(document).ready(function(){
+	$('#startTime').datetimepicker();
+	$('#endTime').datetimepicker();
+	$('#startTime,#endTime').bind("focus",function(){$('#ui-datepicker-div').css({"z-index":500000}); });
+});
+</script>
+</block>

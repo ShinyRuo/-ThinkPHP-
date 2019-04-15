@@ -1,0 +1,48 @@
+<include file="./Home/Tpl/Common/header.html" />
+
+	<!-- #register -->
+	<div id="register" class="mainbody clearfix mbWrap">
+	
+		<form name="loginForm" action="editMibao" method="post">
+		<div id="loginContainer" class="container" >
+
+			<div class="tabview">
+
+				<h2 class="title fl">修改密码</h2>
+			</div>
+			
+			<div class="loginContent" id="pwdPage" style="height:320px;"> 	
+				<div class="leftinfo">
+					<div class="inputWrap" style="margin-top:10px;">
+						<label for="account" style="font-size:14px;font-weight:bolder;">设置您新的密码:</label>
+						<input id="newpassword" name="newpassword" type="password" class="input" style="width:276px;"  />
+							<label for="account" style="font-size:14px;font-weight:bolder;">重复您的密码：</label>
+						 <input type="password" name="repassword" class="input" style='width:276px'>
+						  
+						<span id="accountTip"></span>
+	
+					</div>
+					
+					<div class="inputWrap cb" style="width:67px;float:left;">
+						<span class="button button-hilite" id='sendbtn'>
+							<span class="first-child" >
+								<button id="subBtn" type="submit" class="strong">确定</button>
+							</span>
+						</span>
+				</div>
+				
+				<div class="rightInfoShow">
+				
+				</div>
+				
+			</div>
+			
+		  </div>
+		  </div>
+		</form>
+	
+	
+	</div>
+	<!-- #register end -->
+
+<include file="./Home/Tpl/Common/_footer.html" />

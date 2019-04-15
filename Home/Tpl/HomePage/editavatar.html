@@ -1,0 +1,50 @@
+<extend name="index" />
+
+<block name="change">
+<script>
+  $(function(){
+    $('#img_touxiang').click(function(){
+	   
+	   	$('form[name=myForm]').submit();
+	});
+  
+  
+  });
+
+</script>
+		<!-- Start current auction list -->
+		<div class="container">
+			<div class="tabview"><h2 class="title fl">修改头像</h2></div>
+			
+			
+				<div class="content">
+								
+				<div class="mb_tb_form">
+					<table class="mb_tb">
+					<form action='touxiang' method='post' name='myForm' enctype="multipart/form-data">
+					  <tr>
+					  	<td class="td_p10px">
+						<h2 style='margin-top:-52px;'>当前我的头像</h2>
+						<if condition="($arr[0]['pic']=='')">
+								<img src="__PUBLIC__/Uploads/Pic/big_noavatar.gif" />							    
+								<else/>	<img src="__PUBLIC__/Uploads/Pic/b_<{$arr.0.pic}>"  width="180" height='170' />
+								</if>
+					  	</td>
+					  	<td >
+							<div id='touxiang' style='padding-top:30px;float:left;height:200px;width:370px' ><h2>亲爱的 <{$Think.session.username}>：</h2><p style='font-size:1.2em ;margin-top:9px'> 　　您还没有上传头像吗？您真的想一直成为屌丝吗？赶快上传自己的头像吧，让自己瞬间不一样！=_=</p><div style='margin-top:30px'>上传头像：<input type="file" name="pic" id='pic' value=''></div>
+								<div style='margin-top:20px;margin-left:5px'><img id='img_touxiang' src='__PUBLIC__/Home/Images/common/ok.gif' /></div>
+							</div>
+					  	</td>
+					  	
+					</tr>
+					<form>
+				</table>
+				</div>
+					
+				
+			</div>
+					
+		</div>
+		<!-- End current auction list -->
+
+</block>

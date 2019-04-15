@@ -1,0 +1,90 @@
+<include file="./Home/Tpl/Common/header.html" />
+
+	<!-- #auctionDetail -->
+	<div id="auctionDetail" class="mainbody clearfix">
+	
+		
+		<div id="subpageBanner" class="page960">
+			<a href="">
+				<img src="__PUBLIC__/Home/Images/a-d/1296011542.jpg" tppabs="http://game.haopai365.com/static/a-d/1296011542.jpg" alt="好拍网注册得拍点，快来参与秒杀、拍卖吧！" width="960px" height="120px" border="0"/></a>
+			</a>		
+		</div>
+		
+
+		<!-- #productList -->
+		<div id="productList" class="container">
+	
+			<div class="tabview">
+				<h2 class="title fl">成交的商品</h2>
+			</div>
+			
+			
+			<div class="content">
+
+			<table class="chart">
+			<tr>
+				<th width="48%" class="tc">商品</th>
+				<th width="8%" class="tc">参与人数</th>
+				<th width="8%" class="tc">成交价格</th>
+				<th width="10%" class="tc">买家</th>
+
+				<th width="15%" class="tc">成交时间</th>
+			</tr>
+	
+			<!--Start:  iterator-->
+				<foreach name="moredeals" item="vo">
+					<tr class="AuctionHOR EndingAuction">
+						<td>
+							<div class="proImg">
+								<a>
+									<img style="width:120px;height:80px;" alt="好拍网拍卖成功、545金 魔兽世界 一区 阿尔萨斯" src="__PUBLIC__/Uploads/pics/b_<{$vo.pic}>" />
+								</a>
+							</div>
+							
+							<div class="detail notice" style="margin-left:15px;" >
+								<h3>
+									<span class="space">商品名称：<strong class="purchase space"><{$vo.eqname}></strong></span>
+								</h3>
+								起拍价：<{$vo.price}><br />
+								卖家：<span style="color:red"><{$vo.sellername}></span><br />
+								<span>商品简介：<{$vo.eqdes}></span>
+							</div>
+						</td>
+			
+						<td class="tc">
+							<strong class="price f18" id="price_58257"><{$vo.autimes}></strong>
+						</td>
+						
+						<td class="tc">
+							<strong class="price f18" id="price_58257"><{$vo.total}></strong><br />
+						</td>
+						
+						<td class="tc">
+							<span style="color:red"><{$vo.buyer}></span>
+						</td>
+						
+						
+						<td class="tc">
+							<{$vo.dealtime|date="Y-m-d H:i:s",###}>
+						</td>
+					</tr>
+				</foreach>			
+			<!--End:  iterator-->
+			
+			<tr>
+				<td colspan="4">
+					<!-- .pages -->				
+						<{$page}>
+					<!-- .pages end -->
+				</td>
+			</tr>
+			
+			</table>
+			</div>
+		</div>
+		<!-- #productList end -->
+
+	</div>
+	<!-- #auctionDetail end -->
+
+<include file="./Home/Tpl/Common/_footer.html" />

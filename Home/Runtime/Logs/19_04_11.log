@@ -1,0 +1,140 @@
+[ 2019-04-11T22:02:32+08:00 ] 0.0.0.0 /ThinkPHP/index.php/Index/newsb
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000964s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000964s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\XAMPP\htdocs\ThinkPHP\ThinkPHP\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `equip` [ RunTime:0.008679s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\XAMPP\htdocs\ThinkPHP\ThinkPHP\Lib\Core\Db.class.php 第 568 行.
+SQL: SELECT * FROM `equip` WHERE ( `starttime` <= 1554991352 ) AND ( `endtime` >= 1554991352 ) ORDER BY starttime desc LIMIT 12   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `typedq` [ RunTime:0.006751s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\XAMPP\htdocs\ThinkPHP\ThinkPHP\Lib\Core\Db.class.php 第 568 行.
+SQL: SELECT `typename` FROM `typedq` WHERE 1=1 AND id='52' LIMIT 1   [ RunTime:0.000964s ]
+SQL: SHOW COLUMNS FROM `typezy` [ RunTime:0.004822s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\XAMPP\htdocs\ThinkPHP\ThinkPHP\Lib\Core\Db.class.php 第 568 行.
+SQL: SELECT `typename` FROM `typezy` WHERE 1=1 AND id='0' LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `typebj` [ RunTime:0.003858s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\XAMPP\htdocs\ThinkPHP\ThinkPHP\Lib\Core\Db.class.php 第 568 行.
+SQL: SELECT `typename` FROM `typebj` WHERE 1=1 AND id='0' LIMIT 1   [ RunTime:0.000964s ]
+NOTIC: [8] Use of undefined constant md5 - assumed 'md5' D:\XAMPP\htdocs\ThinkPHP\ThinkPHP\Common\common.php 第 270 行.
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.005786s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\XAMPP\htdocs\ThinkPHP\ThinkPHP\Lib\Core\Db.class.php 第 568 行.
+SQL: SELECT `username` FROM `user` WHERE 1=1 AND id='17' LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `auction` [ RunTime:0.005786s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\XAMPP\htdocs\ThinkPHP\ThinkPHP\Lib\Core\Db.class.php 第 568 行.
+SQL: SELECT * FROM `auction` WHERE 1=1 AND eqid='101' ORDER BY aumoney desc LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\XAMPP\htdocs\ThinkPHP\ThinkPHP\Lib\Core\Db.class.php 第 568 行.
+SQL: SELECT `typename` FROM `typedq` WHERE 1=1 AND id='50' LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\XAMPP\htdocs\ThinkPHP\ThinkPHP\Lib\Core\Db.class.php 第 568 行.
+SQL: SELECT `typename` FROM `typezy` WHERE 1=1 AND id='17' LIMIT 1   [ RunTime:0.000965s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\XAMPP\htdocs\ThinkPHP\ThinkPHP\Lib\Core\Db.class.php 第 568 行.
+SQL: SELECT `typename` FROM `typebj` WHERE 1=1 AND id='60' LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\XAMPP\htdocs\ThinkPHP\ThinkPHP\Lib\Core\Db.class.php 第 568 行.
+SQL: SELECT `username` FROM `user` WHERE 1=1 AND id='17' LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\XAMPP\htdocs\ThinkPHP\ThinkPHP\Lib\Core\Db.class.php 第 568 行.
+SQL: SELECT * FROM `auction` WHERE 1=1 AND eqid='100' ORDER BY aumoney desc LIMIT 1   [ RunTime:0.000000s ]
+
+[ 2019-04-11T22:02:33+08:00 ] 0.0.0.0 /ThinkPHP/index.php/Index/newsb
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000965s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000965s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\XAMPP\htdocs\ThinkPHP\ThinkPHP\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `equip` [ RunTime:0.007715s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\XAMPP\htdocs\ThinkPHP\ThinkPHP\Lib\Core\Db.class.php 第 568 行.
+SQL: SELECT * FROM `equip` WHERE ( `starttime` <= 1554991353 ) AND ( `endtime` >= 1554991353 ) ORDER BY starttime desc LIMIT 12   [ RunTime:0.000965s ]
+SQL: SHOW COLUMNS FROM `typedq` [ RunTime:0.004822s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\XAMPP\htdocs\ThinkPHP\ThinkPHP\Lib\Core\Db.class.php 第 568 行.
+SQL: SELECT `typename` FROM `typedq` WHERE 1=1 AND id='52' LIMIT 1   [ RunTime:0.000964s ]
+SQL: SHOW COLUMNS FROM `typezy` [ RunTime:0.002893s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\XAMPP\htdocs\ThinkPHP\ThinkPHP\Lib\Core\Db.class.php 第 568 行.
+SQL: SELECT `typename` FROM `typezy` WHERE 1=1 AND id='0' LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `typebj` [ RunTime:0.002893s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\XAMPP\htdocs\ThinkPHP\ThinkPHP\Lib\Core\Db.class.php 第 568 行.
+SQL: SELECT `typename` FROM `typebj` WHERE 1=1 AND id='0' LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant md5 - assumed 'md5' D:\XAMPP\htdocs\ThinkPHP\ThinkPHP\Common\common.php 第 270 行.
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.004822s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\XAMPP\htdocs\ThinkPHP\ThinkPHP\Lib\Core\Db.class.php 第 568 行.
+SQL: SELECT `username` FROM `user` WHERE 1=1 AND id='17' LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `auction` [ RunTime:0.005786s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\XAMPP\htdocs\ThinkPHP\ThinkPHP\Lib\Core\Db.class.php 第 568 行.
+SQL: SELECT * FROM `auction` WHERE 1=1 AND eqid='101' ORDER BY aumoney desc LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\XAMPP\htdocs\ThinkPHP\ThinkPHP\Lib\Core\Db.class.php 第 568 行.
+SQL: SELECT `typename` FROM `typedq` WHERE 1=1 AND id='50' LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\XAMPP\htdocs\ThinkPHP\ThinkPHP\Lib\Core\Db.class.php 第 568 行.
+SQL: SELECT `typename` FROM `typezy` WHERE 1=1 AND id='17' LIMIT 1   [ RunTime:0.000965s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\XAMPP\htdocs\ThinkPHP\ThinkPHP\Lib\Core\Db.class.php 第 568 行.
+SQL: SELECT `typename` FROM `typebj` WHERE 1=1 AND id='60' LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\XAMPP\htdocs\ThinkPHP\ThinkPHP\Lib\Core\Db.class.php 第 568 行.
+SQL: SELECT `username` FROM `user` WHERE 1=1 AND id='17' LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\XAMPP\htdocs\ThinkPHP\ThinkPHP\Lib\Core\Db.class.php 第 568 行.
+SQL: SELECT * FROM `auction` WHERE 1=1 AND eqid='100' ORDER BY aumoney desc LIMIT 1   [ RunTime:0.000000s ]
+
+[ 2019-04-11T22:02:34+08:00 ] 0.0.0.0 /ThinkPHP/index.php/Index/newsb
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000965s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000965s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\XAMPP\htdocs\ThinkPHP\ThinkPHP\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `equip` [ RunTime:0.015431s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\XAMPP\htdocs\ThinkPHP\ThinkPHP\Lib\Core\Db.class.php 第 568 行.
+SQL: SELECT * FROM `equip` WHERE ( `starttime` <= 1554991354 ) AND ( `endtime` >= 1554991354 ) ORDER BY starttime desc LIMIT 12   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `typedq` [ RunTime:0.009644s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\XAMPP\htdocs\ThinkPHP\ThinkPHP\Lib\Core\Db.class.php 第 568 行.
+SQL: SELECT `typename` FROM `typedq` WHERE 1=1 AND id='52' LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `typezy` [ RunTime:0.005787s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\XAMPP\htdocs\ThinkPHP\ThinkPHP\Lib\Core\Db.class.php 第 568 行.
+SQL: SELECT `typename` FROM `typezy` WHERE 1=1 AND id='0' LIMIT 1   [ RunTime:0.000964s ]
+SQL: SHOW COLUMNS FROM `typebj` [ RunTime:0.005787s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\XAMPP\htdocs\ThinkPHP\ThinkPHP\Lib\Core\Db.class.php 第 568 行.
+SQL: SELECT `typename` FROM `typebj` WHERE 1=1 AND id='0' LIMIT 1   [ RunTime:0.000964s ]
+NOTIC: [8] Use of undefined constant md5 - assumed 'md5' D:\XAMPP\htdocs\ThinkPHP\ThinkPHP\Common\common.php 第 270 行.
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.010608s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\XAMPP\htdocs\ThinkPHP\ThinkPHP\Lib\Core\Db.class.php 第 568 行.
+SQL: SELECT `username` FROM `user` WHERE 1=1 AND id='17' LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `auction` [ RunTime:0.009644s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\XAMPP\htdocs\ThinkPHP\ThinkPHP\Lib\Core\Db.class.php 第 568 行.
+SQL: SELECT * FROM `auction` WHERE 1=1 AND eqid='101' ORDER BY aumoney desc LIMIT 1   [ RunTime:0.000965s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\XAMPP\htdocs\ThinkPHP\ThinkPHP\Lib\Core\Db.class.php 第 568 行.
+SQL: SELECT `typename` FROM `typedq` WHERE 1=1 AND id='50' LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\XAMPP\htdocs\ThinkPHP\ThinkPHP\Lib\Core\Db.class.php 第 568 行.
+SQL: SELECT `typename` FROM `typezy` WHERE 1=1 AND id='17' LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\XAMPP\htdocs\ThinkPHP\ThinkPHP\Lib\Core\Db.class.php 第 568 行.
+SQL: SELECT `typename` FROM `typebj` WHERE 1=1 AND id='60' LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\XAMPP\htdocs\ThinkPHP\ThinkPHP\Lib\Core\Db.class.php 第 568 行.
+SQL: SELECT `username` FROM `user` WHERE 1=1 AND id='17' LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\XAMPP\htdocs\ThinkPHP\ThinkPHP\Lib\Core\Db.class.php 第 568 行.
+SQL: SELECT * FROM `auction` WHERE 1=1 AND eqid='100' ORDER BY aumoney desc LIMIT 1   [ RunTime:0.000965s ]
+
+[ 2019-04-11T22:02:35+08:00 ] 0.0.0.0 /ThinkPHP/index.php/Index/newsb
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000964s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000964s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\XAMPP\htdocs\ThinkPHP\ThinkPHP\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `equip` [ RunTime:0.015430s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\XAMPP\htdocs\ThinkPHP\ThinkPHP\Lib\Core\Db.class.php 第 568 行.
+SQL: SELECT * FROM `equip` WHERE ( `starttime` <= 1554991355 ) AND ( `endtime` >= 1554991355 ) ORDER BY starttime desc LIMIT 12   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `typedq` [ RunTime:0.011573s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\XAMPP\htdocs\ThinkPHP\ThinkPHP\Lib\Core\Db.class.php 第 568 行.
+SQL: SELECT `typename` FROM `typedq` WHERE 1=1 AND id='52' LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `typezy` [ RunTime:0.004822s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\XAMPP\htdocs\ThinkPHP\ThinkPHP\Lib\Core\Db.class.php 第 568 行.
+SQL: SELECT `typename` FROM `typezy` WHERE 1=1 AND id='0' LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `typebj` [ RunTime:0.004822s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\XAMPP\htdocs\ThinkPHP\ThinkPHP\Lib\Core\Db.class.php 第 568 行.
+SQL: SELECT `typename` FROM `typebj` WHERE 1=1 AND id='0' LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant md5 - assumed 'md5' D:\XAMPP\htdocs\ThinkPHP\ThinkPHP\Common\common.php 第 270 行.
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.007715s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\XAMPP\htdocs\ThinkPHP\ThinkPHP\Lib\Core\Db.class.php 第 568 行.
+SQL: SELECT `username` FROM `user` WHERE 1=1 AND id='17' LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `auction` [ RunTime:0.006750s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\XAMPP\htdocs\ThinkPHP\ThinkPHP\Lib\Core\Db.class.php 第 568 行.
+SQL: SELECT * FROM `auction` WHERE 1=1 AND eqid='101' ORDER BY aumoney desc LIMIT 1   [ RunTime:0.000965s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\XAMPP\htdocs\ThinkPHP\ThinkPHP\Lib\Core\Db.class.php 第 568 行.
+SQL: SELECT `typename` FROM `typedq` WHERE 1=1 AND id='50' LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\XAMPP\htdocs\ThinkPHP\ThinkPHP\Lib\Core\Db.class.php 第 568 行.
+SQL: SELECT `typename` FROM `typezy` WHERE 1=1 AND id='17' LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\XAMPP\htdocs\ThinkPHP\ThinkPHP\Lib\Core\Db.class.php 第 568 行.
+SQL: SELECT `typename` FROM `typebj` WHERE 1=1 AND id='60' LIMIT 1   [ RunTime:0.000964s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\XAMPP\htdocs\ThinkPHP\ThinkPHP\Lib\Core\Db.class.php 第 568 行.
+SQL: SELECT `username` FROM `user` WHERE 1=1 AND id='17' LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\XAMPP\htdocs\ThinkPHP\ThinkPHP\Lib\Core\Db.class.php 第 568 行.
+SQL: SELECT * FROM `auction` WHERE 1=1 AND eqid='100' ORDER BY aumoney desc LIMIT 1   [ RunTime:0.000000s ]
+

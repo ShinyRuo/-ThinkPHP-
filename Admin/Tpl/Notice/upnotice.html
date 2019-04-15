@@ -1,0 +1,87 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Simpla Admin by www.865171.cn</title>
+<!--                       CSS                       -->
+<!-- Reset Stylesheet -->
+<link rel="stylesheet" href="__PUBLIC__/Admin/Css/reset.css" type="text/css" media="screen" />
+<!-- Main Stylesheet -->
+<link rel="stylesheet" href="__PUBLIC__/Admin/Css/style.css" type="text/css" media="screen" />
+<!-- Invalid Stylesheet. This makes stuff look pretty. Remove it if you want the CSS completely valid -->
+<link rel="stylesheet" href="__PUBLIC__/Admin/Css/invalid.css" type="text/css" media="screen" />
+<!--                       Javascripts                       -->
+<!-- jQuery -->
+<script type="text/javascript" src="__PUBLIC__/Admin/Js/jquery-1.3.2.min.js"></script>
+<!-- jQuery Configuration -->
+<script type="text/javascript" src="__PUBLIC__/Admin/Js/simpla.jquery.configuration.js"></script>
+<!-- Facebox jQuery Plugin -->
+<script type="text/javascript" src="__PUBLIC__/Admin/Js/facebox.js"></script>
+<!-- jQuery WYSIWYG Plugin -->
+<script type="text/javascript" src="__PUBLIC__/Admin/Js/jquery.wysiwyg.js"></script>
+<!-- jQuery Datepicker Plugin -->
+<script type="text/javascript" src="__PUBLIC__/Admin/Js/jquery.datePicker.js"></script>
+<script type="text/javascript" src="__PUBLIC__/Admin/Js/jquery.date.js"></script>
+</head>
+<body>
+
+  <!-- End #sidebar -->
+  <div id="main-content">
+  
+  
+    <!-- End .clear -->
+    <div class="content-box">
+      <!-- Start Content Box -->
+      <div class="content-box-header">
+        <h3>添加公告</h3>
+        <div class="clear"></div>
+      </div>
+  
+
+      <div class="content-box-content">
+        <div class="tab-content default-tab" id="tab1">
+          <!-- This is the target div. id must match the href of this div's tab -->
+                   <form action="__APP__/Notice/doupnotice" method="post">
+            <fieldset>
+            <!-- Set class to "column-left" or "column-right" on fieldsets to divide the form into columns -->
+            <p>
+            <input type="hidden" name="id" value="<{$data.id}>">
+              <label>公告标题</label>
+              <input class="text-input small-input" type="text" id="small-input" name="title" value="<{$data.title}>" />
+             
+              <!-- Classes for input-notification: success, error, information, attention -->
+              <br />
+        
+            <p>
+              <label>内容</label>
+              <textarea class="text-input textarea wysiwyg" id="textarea" name="content" cols="79" rows="15"><{$data.content}></textarea>
+            </p>
+            <p>
+              <input class="button" type="submit" value=" 提  交 " />
+            </p>
+            </fieldset>
+            <div class="clear"></div>
+            <!-- End .clear -->
+          </form>
+         
+        </div>
+       
+        <!-- End #tab2 -->
+      </div>
+      <!-- End .content-box-content -->
+    </div>
+  
+    <div class="clear"></div>
+    <!-- Start Notifications -->
+   
+   
+    
+    
+
+    <!-- End #footer -->
+  </div>
+  <!-- End #main-content -->
+</div>
+</body>
+<!-- Download From www.exet.tk-->
+</html>

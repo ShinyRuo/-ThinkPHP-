@@ -1,0 +1,98 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf8" />
+<title>后台管理</title>
+<!--                       CSS                       -->
+<!-- Reset Stylesheet -->
+<link rel="stylesheet" href="__PUBLIC__/Admin/Css/reset.css" type="text/css" media="screen" />
+<!-- Main Stylesheet -->
+<link rel="stylesheet" href="__PUBLIC__/Admin/Css/style.css" type="text/css" media="screen" />
+<!-- Invalid Stylesheet. This makes stuff look pretty. Remove it if you want the CSS completely valid -->
+<link rel="stylesheet" href="__PUBLIC__/Admin/Css/invalid.css" type="text/css" media="screen" />
+<!--                       Javascripts                       -->
+<!-- jQuery -->
+<script type="text/javascript" src="__PUBLIC__/Admin/Js/jquery-1.3.2.min.js"></script>
+<!-- jQuery Configuration -->
+<script type="text/javascript" src="__PUBLIC__/Admin/Js/simpla.jquery.configuration.js"></script>
+<!-- Facebox jQuery Plugin -->
+<script type="text/javascript" src="__PUBLIC__/Admin/Js/facebox.js"></script>
+<!-- jQuery WYSIWYG Plugin -->
+<script type="text/javascript" src="__PUBLIC__/Admin/Js/jquery.wysiwyg.js"></script>
+<!-- jQuery Datepicker Plugin -->
+<script type="text/javascript" src="__PUBLIC__/Admin/Js/jquery.datePicker.js"></script>
+<script type="text/javascript" src="__PUBLIC__/Admin/Js/jquery.date.js"></script>
+</head>
+<body>
+
+
+
+  <!-- End #sidebar -->
+  <div id="main-content">
+    <!-- Page Head -->
+   
+    <!-- End .shortcut-buttons-set -->
+    <div class="clear"></div>
+    <!-- End .clear -->
+    <div class="content-box">
+      <!-- Start Content Box -->
+      <div class="content-box-header">
+        <h3>公告</h3>
+            
+        <div class="clear"></div>
+      </div>
+      <!-- End .content-box-header -->
+      <div class="content-box-content">
+        <div class="tab-content default-tab" id="tab1">
+          <!-- This is the target div. id must match the href of this div's tab -->
+          <div class="notification attention png_bg"> 
+          </div>
+          <table>
+            <thead>
+              <tr>
+            
+                <td>标题</td>
+                <td>内容(简)</td>
+                <td>操作</td>
+              </tr>
+            </thead>
+            <tfoot>
+              <tr>
+                <td colspan="3">
+                  
+                  <div class="pagination"> 分页<{$page}> </div>
+                  <!-- End .pagination -->
+                  <div class="clear"></div>
+                </td>
+              </tr>
+          </tfoot>
+
+          <tbody>
+
+              <!--遍历类别开始-->
+
+            <foreach name="list" item="vo">	 
+              <tr>
+                <td><{$vo.title|mb_strcut=###,0,24,"utf-8"}></td>
+                <td><{$vo.content|mb_strcut=###,0,39,"utf-8"}>……</td>
+                <td>
+                  <!-- Icons -->
+                   <a href="__APP__/Notice/upnotice/id/<{$vo.id}>" title="修改公告"><img src="__PUBLIC__/Admin/Images/icons/hammer_screwdriver.png" alt="修改公告" /></a>
+                  <a href="__APP__/Notice/delnotice/id/<{$vo.id}>" title="删除公告"><img src="__PUBLIC__/Admin/Images/icons/cross.png" alt="删除公告" /></a>
+                 </td>
+          </tr>
+            </foreach>
+              <!--遍历类别结束-->
+
+            </tbody>
+          </table>
+      </div>
+      </div>
+      <!-- End .content-box-content -->
+    </div>
+  </div>
+  <!-- End #main-content -->
+</div>
+</body>
+<!-- Download From www.exet.tk-->
+</html>

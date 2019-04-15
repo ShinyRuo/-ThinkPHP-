@@ -1,0 +1,241 @@
+<include file="./Home/Tpl/Common/header.html" />
+
+
+<script type="text/javascript">
+
+var nTimeOut = 0;		//超时时间
+var bTimeOutState = 0;	//超时状态 
+/* 启动服务端反推监听 */
+function startServerListener(){
+	$.ajax({
+	      url: "/app?type=ajax&action=getperiodforuserhome&callback=?",
+	      type: "POST",
+	      dataType: "json",
+	      success: function(param){
+	    	 nTimeOut = 0;
+	         bTimeOutState=0;
+	         var periods = param.period;
+	         var user = param.user;
+	    	 
+	    	 if(periods.length>0) {
+	    		 for (var c in periods){
+	    			 refreshAuction(periods[c]);
+	    		 }
+	    	 }
+	    	 else {
+	    		 refreshAuction(periods);
+	    	 }
+	    	 
+	    	 if(user!=null)
+	    	 {
+	    		 refreshUser(user);
+	    	 } else {
+    			window._islogined = 0;
+    			  loadLoginInfo({"isLogin":0});
+	    	 }
+	    	 
+	    	 startServerListener();
+	      },
+	      error: function(jqXHR, textStatus, errorThrown){
+	    	  startServerListener();
+	      }
+	   }
+	);
+}
+
+$(document).ready(function(){
+	
+	$.ajaxSetup({cache:false});
+	
+	window._periods = new Array();//拍卖商品对象
+	
+	
+	  
+	
+});
+
+function initStyle()
+{
+	//tabview
+	var $tabs = $(".tab a");
+
+	$tabs.bind("click", function(){
+		var tabId = $(this).attr("href");
+		var tabIdStr = tabId.split("#");
+		var currentTabId = '#'+tabIdStr[1];
+		$(currentTabId).show().siblings(".content").hide();
+		$(this).parent("li").addClass("on").siblings().removeClass("on");
+		$(this).parent("h2").parent("li").addClass("on").siblings().removeClass("on");
+		return false;
+	})
+	.focus(function(){
+		$(this).blur();
+	});
+
+	//input[type='text'] input[type='password'] textarea button
+	$(".input").hover(
+	function(){
+		$(this).addClass("input-hover");
+	},
+	function(){
+		$(this).removeClass("input-hover");
+	});
+
+	$(".button button").bind("click",function(){
+		$(this).blur();
+	});
+
+	$(".input:disabled").addClass("input-disabled");
+
+	$(".button").hover(
+	function(){
+		$(this).addClass("button-hover");
+	},
+	function(){
+		$(this).removeClass("button-hover");
+	});
+
+	$(".button-hilite").hover(
+	function(){
+		$(this).addClass("button-hilite-hover");
+	},
+	function(){
+		$(this).removeClass("button-hilite-hover");
+	});
+}
+
+</script>
+
+
+	
+	<!-- #memberWrap -->
+	<div id="memberWrap" class="mainbody clearfix">
+	
+		<!-- left menu -->
+		
+
+
+
+
+
+	<div id="menubar" class="sidebarWrap">
+			<!-- #menubar -->
+			<div id="user_avatar">
+				<div><a href="__URL__/editavatar" title="修改头像">
+					<if condition="($_SESSION['pic']=='')">
+									<img src="__PUBLIC__/Uploads/Pic/big_noavatar.gif" />							    
+					<else/>	<img style="width:200px;height:170px;"src="__PUBLIC__/Uploads/Pic/b_<{$Think.session.pic}>"  />
+					</if>	
+				</a></div>
+			</div>
+			
+			<div class="borderbox" id="borderbox"> <!--样式在member.css-->
+				<span style="font-weight:normal;">昵称：<{$Think.session.nickname}>
+				<!--<a href="__URL__/bind" style="font-weight:normal;">(未认证)</a>
+				<div title="买家等级1">
+				<span style="font-weight:normal;">等级：</span>
+					<img src="__PUBLIC__/Home/Images/common/star_level1.png"  style="margin:0;"/>		
+				</div>	
+				<hr class="da m0">
+				<ul class="ptn xl xl2 cl">
+
+					<li style="width:80px;height:16px;line-height:16px;"><img src="__PUBLIC__/Home/Images/common/uc_seller.gif" id="roleZone"><a href="__URL__?mode=1" >我是卖家</a></li>
+					
+				</ul>-->
+			</div>
+			
+			<dl class="subMenu">
+				<dt>我是买家</dt>
+				<dd><a href="__URL__/orderlist">查看订单</a></dd>
+				<!--<dd><a href="__URL__/comment">我的评价</a></dd>-->
+				<dd><a href="__URL__/auctioning">正在竞拍</a></dd>
+				<dd><a href="__URL__/auctionhistory">竞拍历史</a></dd>
+			</dl>
+			
+			<dl class="subMenu">
+				<dt>我是卖家</dt>
+				<dd><a href="__URL__/addauction">添加商品</a></dd>
+				<dd><a href="__URL__/auctionlist">历史商品</a></dd>
+				<dd><a href="__URL__/sellerauctioning">正在竞拍</a></dd>
+				<dd><a href="__URL__/sellerfuture">即将竞拍</a></dd>
+				<dd><a href="__URL__/ordermanage">订单管理</a></dd>
+			</dl>
+			
+			<dl class="subMenu">
+				<dt>账户信息</dt>
+				<dd><a href="__URL__/pointcard">账户充值</a></dd>
+				<dd><a href="__URL__/editinfo">个人资料</a></dd>
+				<dd><a href="__URL__/editavatar">修改头像</a></dd>
+				<dd><a href="__URL__/editpword">修改密码</a></dd>
+				<dd><a href="__URL__/answer">密保问题</a></dd>
+			</dl>
+			<!-- #menubar end -->
+		</div>
+	
+<script type="text/javascript" language="javascript">
+function setDefaultMenu(val) {
+	$.getJSON("/app",{"mode": val, type:'ajax',action:'sethomepage'} ,function(result) {
+		if (result == 1) {
+			$('#btnSetMenu').hide();
+			jgrowl("设置成功");
+			return true;
+		} 
+	});
+}
+</script>
+
+
+		<!-- end left menu -->
+		
+		<div id="contentWrap" class="mbWrap">
+		
+			<!-- ad 760x90 -->
+			<div id="mbAdShow" class="cb" style="margin-bottom:10px;">
+				<a href=""><img src="__PUBLIC__/Home/Images/a-d/1296011424.jpg" alt="注册好拍网免费领取拍点，快来参与秒杀、拍卖吧！好拍网，真好拍！" width="746px" height="120px" border="0"/></a>			
+			</div>
+			<!-- ad end -->
+			
+			<!-- #mbAjaxShow ajax page -->
+			<div id="mbforward">
+
+	<!-- Start current auction list -->
+	<block name="change" >
+	
+				<div class="container">
+									<div class="tabview"><h2 class="title fl"></h2></div>
+									<img src="__PUBLIC__/Home/Images/a-d/95-sale.jpg">
+				
+				</div>
+			</div>
+	<!-- End current auction list -->
+	
+	</block>
+			</div>
+			<!-- #mbAjaxShow end -->
+
+		</div>
+	</div>
+	<!-- #memberWrap end -->
+	
+		<script type="text/javascript">
+		$(document).ready(function() {
+			if ('null' != 'null') {
+				jgrowl('null');
+			}
+			$('#birthday').datetimepicker({showTime:false,showHour:false,showMinute:false});
+			configForm();
+			  
+		});
+		$(document).ready(function() {
+				  if ('null' != 'null') {
+					jgrowl('null');
+				  }
+				  $('#birthday').datepick({showOnFocus: true,yearRange: 'c-90:c-2',dateFormat: 'yyyy-mm-dd'});
+				  
+			});
+			function updateavatar() {
+				window.location.reload();
+			}
+	</script>
+
+<include file="./Home/Tpl/Common/_footer.html" />

@@ -1,0 +1,114 @@
+<include file="./Home/Tpl/Common/header.html" />
+
+	<script>
+		$(document).ready(function(){
+
+			function get_content_new(){
+				//alert(1);
+				//alert(<{$pp}>);
+				$.post("__URL__/jsauct/p/<{$pp}>",function(data){
+					//接受ajax返回的数据
+					var obj=eval(data);
+					//$("#jspage").html(obj[1]['page']);
+					//alert(1);
+					//alert(data);
+					//exit;
+					
+
+
+					//先将数据进行一次清空
+					$("#auction").html("");
+					for (var i=0 ;i<obj.length;i++) {
+					var eqname=obj[i]['eqname'];
+					var pic=obj[i]['pic'];
+					//alert(pic);
+					var zdb=obj[i]['zy']+"|"+obj[i]['dq']+"|"+obj[i]['bj'];
+
+					//#算出所剩时间，结束时间-当前时间
+					var sheng=obj[i]["sheng"];
+					//alert(sheng);
+					//var minutes = Math.floor(sheng%60);   
+					var xiaoshi = Math.floor(sheng/3600);  
+					var fenzhong=Math.floor((sheng-Math.floor(sheng/3600)*3600)/60);
+					var miaos=sheng-Math.floor(sheng/3600)*3600;
+					miaos=miaos-fenzhong*60;
+					var maxprice;
+					if(obj[i]['auction']==null){
+						//alert(1);
+						maxprice=obj[i]['price'];
+					}else{
+						maxprice=obj[i]['auction'][0]['aumoney']
+					}
+					var price=obj[i]['price'];
+					//参与人数
+					var autimes=obj[i]['autimes'];
+					////获取id
+					var id=obj[i]['id'];
+					//定义字符 
+					var str='<div class="AuctionVER" id="zone_57618"><div class="auTitle">'+eqname+'</div><div class="proImg"><a href="__URL__/info/id/'+id+'" tppabs="http://game.haopai365.com/app/infopid-57618.html"><img width=120 height=80 src="__PUBLIC__/Uploads/pics/b_'+pic+'" tppabs="http://game.haopai365.com/upload/product/201112/10/1323448679376.jpgmiddle.jpg"/></a></div><br /><div class="detail"><h3><a href="__URL__/info/id/'+id+'" tppabs="http://game.haopai365.com/app/infopid-57618.html" >'+zdb+'</a><span class="fmMingLiU">(荷兰式拍卖)</span></h3></div><div class="countdown f24"><span id="time_57618" title="剩余时间">'+xiaoshi+':'+fenzhong+':'+miaos+'</span><input type="hidden" name="closeto_finish" class="closeto_finish" id="57618" value="0" /> </div><div class="price f22"><span id="price_57618" title="当前价格">&yen;'+maxprice+'</span></div><div class="bidder"><p>竞拍次数：<strong id="bid_count_57618">'+autimes+'</strong></p><p>起拍价：<strong class="purchase">¥'+price+'</strong></p><p></p><span class="auctionButton"><span id="bid_btn_57618" class="button" ><span class="first-child"><a id="bid_57618" name="57618" href="__URL__/info/id/'+id+'" tppabs="http://game.haopai365.com/app/infopid-57618.html" class="bidbutton bidImgButton bidImgButton_live" ></a></span></span></span></div></div>';
+		
+
+					//字符追加到div-liveAuctionList
+					$("#auction").append(str);
+
+					
+
+					//for-end++++++++++++++++++++++++++++++++++++++++++++++++
+					};
+					//将新数据append到显示位置
+				//setTimeout(get_content_new(),10000);
+					//再次调用函数get_content(url)发送ajax请求
+
+					
+				})
+			//	get_content_timeOut();
+				//get_content_new();
+			}
+			//当第一次进入首页的时候显示最新拍卖，ajax函数要自动调用一次，显示最新拍卖的
+			//
+			setInterval(function(){
+				get_content_new();
+			},1000);
+			
+			
+		})
+</script>
+	<!-- #auctionDetail -->
+	<div id="auctionDetail" class="mainbody clearfix">
+	
+		<div id="subpageBanner" class="page960">
+			<a  href="" tppabs="http://game.haopai365.com/app/register" >
+			<img src="__PUBLIC__/Home/Images/a-d/1296011542.jpg" tppabs="http://game.haopai365.com/static/a-d/1296011542.jpg" alt="好拍网，注册得拍点，快来参与秒杀、拍卖吧！" width="960px" height="120px" border="0"/></a>
+		</div>
+		
+		<!-- #auctioningList -->
+		<div id="auctioningList" class="container clearfix">
+		
+			<div class="tabview">
+				<h2 class="title fl">拍卖中的商品</h2>
+			</div>
+			
+
+
+
+
+			<!-- Start: iterator_____________________________________________________________ -->
+			<div id="auction">
+			
+						
+			
+				</div>
+				<!-- End: iterator________________________________________________________________ -->
+				
+		</div>		
+			<!--end: Auction product -->	
+		<!-- .pages -->			
+			
+			<h2><{$page}></h2>
+				<center><!-- .pages end --></center>
+			
+		<!-- #auctioningList end -->
+	</div>
+	<!-- #auctionDetail end -->
+
+<include file="./Home/Tpl/Common/_footer.html" />

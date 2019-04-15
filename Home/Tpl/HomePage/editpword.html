@@ -1,0 +1,57 @@
+<extend name="index" />
+
+<block name="change">
+
+		<!-- Start current auction list -->
+		<div class="container">
+			<div class="tabview"><h2 class="title fl">修改密码</h2></div>
+			
+			
+				<div class="content">
+					
+				<div class="mb_tb_form">
+				<form name="mbform" id="mbform" action="newpwd" method="post" >
+				<table class="mb_tb">
+					  <tr>
+					  	<td class="td_title80">旧密码：</td>
+					  	<td>
+					  		<input type="password" value="" style="width: 201px;" class="input" name="oldPassword" id="oldPassword" />
+					  		&nbsp;<span id="oldPasswordTip" style="color:red;font-size:2em;">*</span>
+					  	</td>
+					  	
+					  </tr>
+					  
+					  <tr>
+					  	<td class="td_title80">新密码：</td>
+					  	<td>					  	  
+					  		<input type="password" value="" style="width: 201px;" class="input" name="password" id="password" />
+					  		&nbsp;<span id="passwordTip"style="color:red;font-size:2em;">*</span>
+					  	</td>
+					  	
+					  </tr>
+					  
+					  <tr>
+					  	<td class="td_title80">确认新密码：</td>
+					  	<td>					  	  
+						  	<input type="password" value="" style="width: 201px;" class="input" name="password2" id="password2" />
+						  	&nbsp;<span id="password2Tip"style="color:red;font-size:2em;">*</span>
+					  	</td>
+					  	
+					  </tr>
+					  
+					  <tr>
+					  	<td colspan="3"  class="mb_saveBtn80">
+					  	<span class="button button-hilite">
+							<button id="subBtn" class="strong" type="submit">保存</button>
+						</span>
+					  	</td>
+					  </tr>
+					</table>
+					</form>
+				</div>
+			</div>
+					
+		</div>
+		<!-- End current auction list -->
+
+</block>

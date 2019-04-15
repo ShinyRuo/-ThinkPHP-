@@ -1,0 +1,171 @@
+
+<include file="./Home/Tpl/Common/header.html" />
+<script src="__PUBLIC_/js/jquery.js"></script>
+<script type="text/javascript"> 
+	$(function(){
+
+			  var error=0;  
+			   $('input[name="username"]').blur(function(){
+				   
+				       if($(this).val()==''){
+					   $('span[id="xx1"]').after('<span class="user" style="color:red">用户名不能为空！！！</span>');
+					   }else{
+					   
+					   $.get('__URL__/check',{username:$(this).val()},function(data){
+						      if(data == 1){
+							  $('span[id="xx1"]').after('<span class="user" style="color:red">用户名已经存在！！！</span>'); 
+							  error++;
+								 }else{
+								 $('span[id="xx1"]').after('<span class="user" style="color:red">可以注册！！！</span>');      
+								 error=0;
+								 }
+						   
+						   });
+					   }
+				   
+					   });
+
+               $('input[name="nickname"]').blur(function(){
+				   
+				       if($(this).val()==''){
+					   $('span[id="xx2"]').after('<span class="nickname" style="color:red">昵称不能为空！！！</span>');
+					   }
+				   
+					   });
+
+			     $('input[name="password"]').blur(function(){
+				   
+				       if($(this).val()==''){
+					   $('span[id="xx3"]').after('<span class="password" style="color:red">密码不能为空！！！</span>');
+					   }
+				   
+					   });
+				  $('input[name="repassword"]').blur(function(){
+				       var pwd=$('input[name="password"]').val();
+					   var repwd=$('input[name="repassword"]').val();
+					   if(pwd==''){
+					   
+					    $('span[id="xx4"]').after('<span class="repassword" style="color:red">""</span>');
+					   }else if(repwd != pwd){
+					   $('span[id="xx4"]').after('<span class="repassword" style="color:red">密码不一致！！！</span>');
+					   }else{
+					     $('span[id="xx4"]').after('<span class="repassword" style="color:red">密码正确！！！</span>');
+					   }
+				   
+				   });
+
+			   $('input[name="username"]').focus(function(){
+				   
+				    $('.user').remove();
+					});   
+			     $('input[name="nickname"]').focus(function(){
+				   
+				    $('.nickname').remove();
+					}); 
+				   $('input[name="password"]').focus(function(){
+				   
+				    $('.password').remove();
+					}); 
+				     $('input[name="repassword"]').focus(function(){
+				   
+				    $('.repassword').remove();
+				   }); 
+			   
+			   });
+</script>
+
+
+	
+	<!-- #register -->
+	<div id="register" class="mainbody clearfix mbWrap">
+	
+		
+				<div id="subpageBanner" style="margin-bottom: 10px;" class="page960">
+					<a href="#" ><img src="__PUBLIC__/Home/Images/a-d/1296011542.jpg" 
+						title="注册得拍点，快来参与秒杀、拍卖吧！" width="960px"
+							height="120px" border="0" /></a>
+				</div>
+
+		
+
+		<div id="tips" style="position:absolute; left:50%; width:300px;"></div>
+		<form name="registerForm" action="__URL__/doRegister" method="post">
+		<input type="hidden" name="pID" id="pID" value="0"/>
+		<div id="signUpNow" class="container">
+
+			<div class="tabview">
+
+				<h2 class="title fl">创建一个新账户</h2>
+			</div>
+			
+			<div class="loginContent"> 	
+				<div class="leftinfo">
+					<div class="inputWrap">
+						<label for="account">用户名:</label>
+						<input id="account" name="username" type="text" class="input" style="width:200px;"  value=""/><span style='color:red;font-size:2em' id='xx1'>*</span>
+						<div id="accountTip"></div>
+					</div>
+					
+					<div class="inputWrap type2">
+						<label for="nickname">昵称:</label>
+						<input id="nickname" name="nickname" type="text" class="input" style="width:200px;" value=""/><span style='color:red;font-size:2em'id='xx2'>*</span>
+						<div id="nicknameTip"></div>
+	
+					</div>				
+					
+					<div class="inputWrap type2">
+						<label for="password">密码:</label>
+						<input id="password" name="password" type="password" class="input" style="width:200px;" /><span style='color:red;font-size:2em' id='xx3'>*</span>
+						<div id="passwordTip"></div>
+	
+					</div>				
+					
+					<div class="inputWrap type2">
+						<label for="repassword">确认密码:</label>
+						<input name="repassword" type="password" class="input" style="width:200px;"/><span style='color:red;font-size:2em;'id='xx4'>*</span>
+						<div id="password2Tip"></div>
+	
+					</div>
+			
+					<div id="verifycodeInput" style="width:300px;height:50px;">
+						
+						<div class="fl" >
+							<label for="vcode" style="width:60px;">验证码:</label>
+							<input type="text" class="input fl space" id="vcode" name="vcode" style="width:60px;" />
+						</div>
+						<div class="fl" style="width: 203px;float:left;margin-top:18px;margin-left:4px;"><img id="vcode" src="__APP__/Register/verify" 
+							  title="点击刷新验证码" style="cursor:pointer;" onclick="this.src=this.src+'?'+Math.random()"/></div>
+						<div class="fl" style="padding-top:20px;"></div>
+					</div>
+					
+					<div id="vcodeTip" style="margin-bottom:5px;"></div>
+				
+					<div class="inputWrap cb" style="margin-bottom:6px;">
+	
+						<span class="button button-hilite" id='sendbtn'>
+							<span class="first-child" >
+								<button id="subBtn" type="submit" class="strong">注册</button>
+							</span>
+						</span>
+					</div>
+					
+					<!--
+					<p class="notice">系统将自动发送一封验证邮件到您邮箱，请注意查收。</p>
+					<p class="notice">如果您已拥有好拍网账户，请勿再注册。<a href="help/content/account/register.html" tppabs="http://game.haopai365.com/app/help/content/account/register.html" title="查看违规处理">[详情]</a></p>
+					-->
+				</div>
+				
+				<div class="rightInfoShow regRight-ad1" id="rightInfoAD">
+				
+				</div>
+				
+			</div>
+		  </div>
+		</form>
+	
+	
+	</div>
+	<!-- #register end -->
+
+<include file="./Home/Tpl/Common/_footer.html" />
+

@@ -1,0 +1,602 @@
+[ 2019-04-12T10:54:35+08:00 ] 127.0.0.1 /ThinkPHP/index.php/Index/newsb
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.008000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\XAMPP\htdocs\ThinkPHP\ThinkPHP\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `equip` [ RunTime:0.020000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\XAMPP\htdocs\ThinkPHP\ThinkPHP\Lib\Core\Db.class.php 第 568 行.
+SQL: SELECT * FROM `equip` WHERE ( `starttime` <= 1555037675 ) AND ( `endtime` >= 1555037675 ) ORDER BY starttime desc LIMIT 12   [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\XAMPP\htdocs\ThinkPHP\Home\Lib\Action\IndexAction.class.php 第 125 行.
+
+[ 2019-04-12T10:54:35+08:00 ] 0.0.0.0 /ThinkPHP/index.php/Index/newsb
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.008000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\XAMPP\htdocs\ThinkPHP\ThinkPHP\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `equip` [ RunTime:0.003000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\XAMPP\htdocs\ThinkPHP\ThinkPHP\Lib\Core\Db.class.php 第 568 行.
+SQL: SELECT * FROM `equip` WHERE ( `starttime` <= 1555037675 ) AND ( `endtime` >= 1555037675 ) ORDER BY starttime desc LIMIT 12   [ RunTime:0.001000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\XAMPP\htdocs\ThinkPHP\Home\Lib\Action\IndexAction.class.php 第 125 行.
+
+[ 2019-04-12T10:54:35+08:00 ] 127.0.0.1 /ThinkPHP/index.php/Index/newsb
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\XAMPP\htdocs\ThinkPHP\ThinkPHP\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `equip` [ RunTime:0.004000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\XAMPP\htdocs\ThinkPHP\ThinkPHP\Lib\Core\Db.class.php 第 568 行.
+SQL: SELECT * FROM `equip` WHERE ( `starttime` <= 1555037675 ) AND ( `endtime` >= 1555037675 ) ORDER BY starttime desc LIMIT 12   [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\XAMPP\htdocs\ThinkPHP\Home\Lib\Action\IndexAction.class.php 第 125 行.
+
+[ 2019-04-12T10:54:36+08:00 ] 127.0.0.1 /ThinkPHP/index.php/Index/newsb
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\XAMPP\htdocs\ThinkPHP\ThinkPHP\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `equip` [ RunTime:0.007000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\XAMPP\htdocs\ThinkPHP\ThinkPHP\Lib\Core\Db.class.php 第 568 行.
+SQL: SELECT * FROM `equip` WHERE ( `starttime` <= 1555037676 ) AND ( `endtime` >= 1555037676 ) ORDER BY starttime desc LIMIT 12   [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\XAMPP\htdocs\ThinkPHP\Home\Lib\Action\IndexAction.class.php 第 125 行.
+
+[ 2019-04-12T10:54:37+08:00 ] 127.0.0.1 /ThinkPHP/index.php/Index/newsb
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\XAMPP\htdocs\ThinkPHP\ThinkPHP\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `equip` [ RunTime:0.012000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\XAMPP\htdocs\ThinkPHP\ThinkPHP\Lib\Core\Db.class.php 第 568 行.
+SQL: SELECT * FROM `equip` WHERE ( `starttime` <= 1555037677 ) AND ( `endtime` >= 1555037677 ) ORDER BY starttime desc LIMIT 12   [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\XAMPP\htdocs\ThinkPHP\Home\Lib\Action\IndexAction.class.php 第 125 行.
+
+[ 2019-04-12T10:54:39+08:00 ] 127.0.0.1 /ThinkPHP/index.php/Index/newsb
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\XAMPP\htdocs\ThinkPHP\ThinkPHP\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `equip` [ RunTime:0.230000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\XAMPP\htdocs\ThinkPHP\ThinkPHP\Lib\Core\Db.class.php 第 568 行.
+SQL: SELECT * FROM `equip` WHERE ( `starttime` <= 1555037679 ) AND ( `endtime` >= 1555037679 ) ORDER BY starttime desc LIMIT 12   [ RunTime:0.002000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\XAMPP\htdocs\ThinkPHP\Home\Lib\Action\IndexAction.class.php 第 125 行.
+
+[ 2019-04-12T10:54:39+08:00 ] 127.0.0.1 /ThinkPHP/index.php/Index/newsb
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\XAMPP\htdocs\ThinkPHP\ThinkPHP\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `equip` [ RunTime:0.009000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\XAMPP\htdocs\ThinkPHP\ThinkPHP\Lib\Core\Db.class.php 第 568 行.
+SQL: SELECT * FROM `equip` WHERE ( `starttime` <= 1555037679 ) AND ( `endtime` >= 1555037679 ) ORDER BY starttime desc LIMIT 12   [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\XAMPP\htdocs\ThinkPHP\Home\Lib\Action\IndexAction.class.php 第 125 行.
+
+[ 2019-04-12T10:54:40+08:00 ] 127.0.0.1 /ThinkPHP/index.php/Index/newsb
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\XAMPP\htdocs\ThinkPHP\ThinkPHP\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `equip` [ RunTime:0.009000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\XAMPP\htdocs\ThinkPHP\ThinkPHP\Lib\Core\Db.class.php 第 568 行.
+SQL: SELECT * FROM `equip` WHERE ( `starttime` <= 1555037680 ) AND ( `endtime` >= 1555037680 ) ORDER BY starttime desc LIMIT 12   [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\XAMPP\htdocs\ThinkPHP\Home\Lib\Action\IndexAction.class.php 第 125 行.
+
+[ 2019-04-12T10:54:41+08:00 ] 127.0.0.1 /ThinkPHP/index.php/Index/newsb
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\XAMPP\htdocs\ThinkPHP\ThinkPHP\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `equip` [ RunTime:0.007000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\XAMPP\htdocs\ThinkPHP\ThinkPHP\Lib\Core\Db.class.php 第 568 行.
+SQL: SELECT * FROM `equip` WHERE ( `starttime` <= 1555037681 ) AND ( `endtime` >= 1555037681 ) ORDER BY starttime desc LIMIT 12   [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\XAMPP\htdocs\ThinkPHP\Home\Lib\Action\IndexAction.class.php 第 125 行.
+
+[ 2019-04-12T10:54:42+08:00 ] 127.0.0.1 /ThinkPHP/index.php/Index/newsb
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\XAMPP\htdocs\ThinkPHP\ThinkPHP\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `equip` [ RunTime:0.009000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\XAMPP\htdocs\ThinkPHP\ThinkPHP\Lib\Core\Db.class.php 第 568 行.
+SQL: SELECT * FROM `equip` WHERE ( `starttime` <= 1555037682 ) AND ( `endtime` >= 1555037682 ) ORDER BY starttime desc LIMIT 12   [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\XAMPP\htdocs\ThinkPHP\Home\Lib\Action\IndexAction.class.php 第 125 行.
+
+[ 2019-04-12T10:54:43+08:00 ] 127.0.0.1 /ThinkPHP/index.php/Index/newsb
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\XAMPP\htdocs\ThinkPHP\ThinkPHP\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `equip` [ RunTime:0.008000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\XAMPP\htdocs\ThinkPHP\ThinkPHP\Lib\Core\Db.class.php 第 568 行.
+SQL: SELECT * FROM `equip` WHERE ( `starttime` <= 1555037683 ) AND ( `endtime` >= 1555037683 ) ORDER BY starttime desc LIMIT 12   [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\XAMPP\htdocs\ThinkPHP\Home\Lib\Action\IndexAction.class.php 第 125 行.
+
+[ 2019-04-12T10:54:44+08:00 ] 127.0.0.1 /ThinkPHP/index.php/Index/newsb
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\XAMPP\htdocs\ThinkPHP\ThinkPHP\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `equip` [ RunTime:0.007000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\XAMPP\htdocs\ThinkPHP\ThinkPHP\Lib\Core\Db.class.php 第 568 行.
+SQL: SELECT * FROM `equip` WHERE ( `starttime` <= 1555037684 ) AND ( `endtime` >= 1555037684 ) ORDER BY starttime desc LIMIT 12   [ RunTime:0.001000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\XAMPP\htdocs\ThinkPHP\Home\Lib\Action\IndexAction.class.php 第 125 行.
+
+[ 2019-04-12T10:54:45+08:00 ] 127.0.0.1 /ThinkPHP/index.php/Index/newsb
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\XAMPP\htdocs\ThinkPHP\ThinkPHP\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `equip` [ RunTime:0.014000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\XAMPP\htdocs\ThinkPHP\ThinkPHP\Lib\Core\Db.class.php 第 568 行.
+SQL: SELECT * FROM `equip` WHERE ( `starttime` <= 1555037685 ) AND ( `endtime` >= 1555037685 ) ORDER BY starttime desc LIMIT 12   [ RunTime:0.001000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\XAMPP\htdocs\ThinkPHP\Home\Lib\Action\IndexAction.class.php 第 125 行.
+
+[ 2019-04-12T10:54:46+08:00 ] 127.0.0.1 /ThinkPHP/index.php/Index/newsb
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\XAMPP\htdocs\ThinkPHP\ThinkPHP\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `equip` [ RunTime:0.009000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\XAMPP\htdocs\ThinkPHP\ThinkPHP\Lib\Core\Db.class.php 第 568 行.
+SQL: SELECT * FROM `equip` WHERE ( `starttime` <= 1555037686 ) AND ( `endtime` >= 1555037686 ) ORDER BY starttime desc LIMIT 12   [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\XAMPP\htdocs\ThinkPHP\Home\Lib\Action\IndexAction.class.php 第 125 行.
+
+[ 2019-04-12T10:54:47+08:00 ] 127.0.0.1 /ThinkPHP/index.php/Index/newsb
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\XAMPP\htdocs\ThinkPHP\ThinkPHP\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `equip` [ RunTime:0.007000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\XAMPP\htdocs\ThinkPHP\ThinkPHP\Lib\Core\Db.class.php 第 568 行.
+SQL: SELECT * FROM `equip` WHERE ( `starttime` <= 1555037687 ) AND ( `endtime` >= 1555037687 ) ORDER BY starttime desc LIMIT 12   [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\XAMPP\htdocs\ThinkPHP\Home\Lib\Action\IndexAction.class.php 第 125 行.
+
+[ 2019-04-12T10:54:48+08:00 ] 127.0.0.1 /ThinkPHP/index.php/Index/newsb
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\XAMPP\htdocs\ThinkPHP\ThinkPHP\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `equip` [ RunTime:0.009000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\XAMPP\htdocs\ThinkPHP\ThinkPHP\Lib\Core\Db.class.php 第 568 行.
+SQL: SELECT * FROM `equip` WHERE ( `starttime` <= 1555037688 ) AND ( `endtime` >= 1555037688 ) ORDER BY starttime desc LIMIT 12   [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\XAMPP\htdocs\ThinkPHP\Home\Lib\Action\IndexAction.class.php 第 125 行.
+
+[ 2019-04-12T10:54:49+08:00 ] 127.0.0.1 /ThinkPHP/index.php/Index/newsb
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\XAMPP\htdocs\ThinkPHP\ThinkPHP\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `equip` [ RunTime:0.009000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\XAMPP\htdocs\ThinkPHP\ThinkPHP\Lib\Core\Db.class.php 第 568 行.
+SQL: SELECT * FROM `equip` WHERE ( `starttime` <= 1555037689 ) AND ( `endtime` >= 1555037689 ) ORDER BY starttime desc LIMIT 12   [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\XAMPP\htdocs\ThinkPHP\Home\Lib\Action\IndexAction.class.php 第 125 行.
+
+[ 2019-04-12T10:54:50+08:00 ] 127.0.0.1 /ThinkPHP/index.php/Index/newsb
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\XAMPP\htdocs\ThinkPHP\ThinkPHP\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `equip` [ RunTime:0.008000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\XAMPP\htdocs\ThinkPHP\ThinkPHP\Lib\Core\Db.class.php 第 568 行.
+SQL: SELECT * FROM `equip` WHERE ( `starttime` <= 1555037690 ) AND ( `endtime` >= 1555037690 ) ORDER BY starttime desc LIMIT 12   [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\XAMPP\htdocs\ThinkPHP\Home\Lib\Action\IndexAction.class.php 第 125 行.
+
+[ 2019-04-12T10:54:51+08:00 ] 127.0.0.1 /ThinkPHP/index.php/Index/newsb
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\XAMPP\htdocs\ThinkPHP\ThinkPHP\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `equip` [ RunTime:0.010000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\XAMPP\htdocs\ThinkPHP\ThinkPHP\Lib\Core\Db.class.php 第 568 行.
+SQL: SELECT * FROM `equip` WHERE ( `starttime` <= 1555037691 ) AND ( `endtime` >= 1555037691 ) ORDER BY starttime desc LIMIT 12   [ RunTime:0.001000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\XAMPP\htdocs\ThinkPHP\Home\Lib\Action\IndexAction.class.php 第 125 行.
+
+[ 2019-04-12T10:54:52+08:00 ] 127.0.0.1 /ThinkPHP/index.php/Index/newsb
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\XAMPP\htdocs\ThinkPHP\ThinkPHP\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `equip` [ RunTime:0.009000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\XAMPP\htdocs\ThinkPHP\ThinkPHP\Lib\Core\Db.class.php 第 568 行.
+SQL: SELECT * FROM `equip` WHERE ( `starttime` <= 1555037692 ) AND ( `endtime` >= 1555037692 ) ORDER BY starttime desc LIMIT 12   [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\XAMPP\htdocs\ThinkPHP\Home\Lib\Action\IndexAction.class.php 第 125 行.
+
+[ 2019-04-12T10:54:53+08:00 ] 127.0.0.1 /ThinkPHP/index.php/Index/newsb
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\XAMPP\htdocs\ThinkPHP\ThinkPHP\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `equip` [ RunTime:0.008000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\XAMPP\htdocs\ThinkPHP\ThinkPHP\Lib\Core\Db.class.php 第 568 行.
+SQL: SELECT * FROM `equip` WHERE ( `starttime` <= 1555037693 ) AND ( `endtime` >= 1555037693 ) ORDER BY starttime desc LIMIT 12   [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\XAMPP\htdocs\ThinkPHP\Home\Lib\Action\IndexAction.class.php 第 125 行.
+
+[ 2019-04-12T10:54:54+08:00 ] 127.0.0.1 /ThinkPHP/index.php/Index/newsb
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\XAMPP\htdocs\ThinkPHP\ThinkPHP\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `equip` [ RunTime:0.014000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\XAMPP\htdocs\ThinkPHP\ThinkPHP\Lib\Core\Db.class.php 第 568 行.
+SQL: SELECT * FROM `equip` WHERE ( `starttime` <= 1555037694 ) AND ( `endtime` >= 1555037694 ) ORDER BY starttime desc LIMIT 12   [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\XAMPP\htdocs\ThinkPHP\Home\Lib\Action\IndexAction.class.php 第 125 行.
+
+[ 2019-04-12T10:54:55+08:00 ] 127.0.0.1 /ThinkPHP/index.php/Index/newsb
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\XAMPP\htdocs\ThinkPHP\ThinkPHP\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `equip` [ RunTime:0.010000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\XAMPP\htdocs\ThinkPHP\ThinkPHP\Lib\Core\Db.class.php 第 568 行.
+SQL: SELECT * FROM `equip` WHERE ( `starttime` <= 1555037695 ) AND ( `endtime` >= 1555037695 ) ORDER BY starttime desc LIMIT 12   [ RunTime:0.001000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\XAMPP\htdocs\ThinkPHP\Home\Lib\Action\IndexAction.class.php 第 125 行.
+
+[ 2019-04-12T10:54:56+08:00 ] 127.0.0.1 /ThinkPHP/index.php/Index/newsb
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\XAMPP\htdocs\ThinkPHP\ThinkPHP\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `equip` [ RunTime:0.008000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\XAMPP\htdocs\ThinkPHP\ThinkPHP\Lib\Core\Db.class.php 第 568 行.
+SQL: SELECT * FROM `equip` WHERE ( `starttime` <= 1555037696 ) AND ( `endtime` >= 1555037696 ) ORDER BY starttime desc LIMIT 12   [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\XAMPP\htdocs\ThinkPHP\Home\Lib\Action\IndexAction.class.php 第 125 行.
+
+[ 2019-04-12T10:54:57+08:00 ] 127.0.0.1 /ThinkPHP/index.php/Index/newsb
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\XAMPP\htdocs\ThinkPHP\ThinkPHP\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `equip` [ RunTime:0.010000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\XAMPP\htdocs\ThinkPHP\ThinkPHP\Lib\Core\Db.class.php 第 568 行.
+SQL: SELECT * FROM `equip` WHERE ( `starttime` <= 1555037697 ) AND ( `endtime` >= 1555037697 ) ORDER BY starttime desc LIMIT 12   [ RunTime:0.001000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\XAMPP\htdocs\ThinkPHP\Home\Lib\Action\IndexAction.class.php 第 125 行.
+
+[ 2019-04-12T10:54:58+08:00 ] 127.0.0.1 /ThinkPHP/index.php/Index/newsb
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\XAMPP\htdocs\ThinkPHP\ThinkPHP\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `equip` [ RunTime:0.014000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\XAMPP\htdocs\ThinkPHP\ThinkPHP\Lib\Core\Db.class.php 第 568 行.
+SQL: SELECT * FROM `equip` WHERE ( `starttime` <= 1555037698 ) AND ( `endtime` >= 1555037698 ) ORDER BY starttime desc LIMIT 12   [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\XAMPP\htdocs\ThinkPHP\Home\Lib\Action\IndexAction.class.php 第 125 行.
+
+[ 2019-04-12T10:54:59+08:00 ] 127.0.0.1 /ThinkPHP/index.php/Index/newsb
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\XAMPP\htdocs\ThinkPHP\ThinkPHP\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `equip` [ RunTime:0.007000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\XAMPP\htdocs\ThinkPHP\ThinkPHP\Lib\Core\Db.class.php 第 568 行.
+SQL: SELECT * FROM `equip` WHERE ( `starttime` <= 1555037699 ) AND ( `endtime` >= 1555037699 ) ORDER BY starttime desc LIMIT 12   [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\XAMPP\htdocs\ThinkPHP\Home\Lib\Action\IndexAction.class.php 第 125 行.
+
+[ 2019-04-12T10:55:00+08:00 ] 127.0.0.1 /ThinkPHP/index.php/Index/newsb
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\XAMPP\htdocs\ThinkPHP\ThinkPHP\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `equip` [ RunTime:0.014000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\XAMPP\htdocs\ThinkPHP\ThinkPHP\Lib\Core\Db.class.php 第 568 行.
+SQL: SELECT * FROM `equip` WHERE ( `starttime` <= 1555037700 ) AND ( `endtime` >= 1555037700 ) ORDER BY starttime desc LIMIT 12   [ RunTime:0.001000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\XAMPP\htdocs\ThinkPHP\Home\Lib\Action\IndexAction.class.php 第 125 行.
+
+[ 2019-04-12T10:55:01+08:00 ] 127.0.0.1 /ThinkPHP/index.php/Index/newsb
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\XAMPP\htdocs\ThinkPHP\ThinkPHP\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `equip` [ RunTime:0.008000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\XAMPP\htdocs\ThinkPHP\ThinkPHP\Lib\Core\Db.class.php 第 568 行.
+SQL: SELECT * FROM `equip` WHERE ( `starttime` <= 1555037701 ) AND ( `endtime` >= 1555037701 ) ORDER BY starttime desc LIMIT 12   [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\XAMPP\htdocs\ThinkPHP\Home\Lib\Action\IndexAction.class.php 第 125 行.
+
+[ 2019-04-12T10:55:02+08:00 ] 127.0.0.1 /ThinkPHP/index.php/Index/newsb
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\XAMPP\htdocs\ThinkPHP\ThinkPHP\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `equip` [ RunTime:0.007000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\XAMPP\htdocs\ThinkPHP\ThinkPHP\Lib\Core\Db.class.php 第 568 行.
+SQL: SELECT * FROM `equip` WHERE ( `starttime` <= 1555037702 ) AND ( `endtime` >= 1555037702 ) ORDER BY starttime desc LIMIT 12   [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\XAMPP\htdocs\ThinkPHP\Home\Lib\Action\IndexAction.class.php 第 125 行.
+
+[ 2019-04-12T10:55:03+08:00 ] 127.0.0.1 /ThinkPHP/index.php/Index/newsb
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\XAMPP\htdocs\ThinkPHP\ThinkPHP\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `equip` [ RunTime:0.007000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\XAMPP\htdocs\ThinkPHP\ThinkPHP\Lib\Core\Db.class.php 第 568 行.
+SQL: SELECT * FROM `equip` WHERE ( `starttime` <= 1555037703 ) AND ( `endtime` >= 1555037703 ) ORDER BY starttime desc LIMIT 12   [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\XAMPP\htdocs\ThinkPHP\Home\Lib\Action\IndexAction.class.php 第 125 行.
+
+[ 2019-04-12T10:55:04+08:00 ] 127.0.0.1 /ThinkPHP/index.php/Index/newsb
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\XAMPP\htdocs\ThinkPHP\ThinkPHP\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `equip` [ RunTime:0.011000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\XAMPP\htdocs\ThinkPHP\ThinkPHP\Lib\Core\Db.class.php 第 568 行.
+SQL: SELECT * FROM `equip` WHERE ( `starttime` <= 1555037704 ) AND ( `endtime` >= 1555037704 ) ORDER BY starttime desc LIMIT 12   [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\XAMPP\htdocs\ThinkPHP\Home\Lib\Action\IndexAction.class.php 第 125 行.
+
+[ 2019-04-12T10:55:05+08:00 ] 127.0.0.1 /ThinkPHP/index.php/Index/newsb
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\XAMPP\htdocs\ThinkPHP\ThinkPHP\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `equip` [ RunTime:0.009000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\XAMPP\htdocs\ThinkPHP\ThinkPHP\Lib\Core\Db.class.php 第 568 行.
+SQL: SELECT * FROM `equip` WHERE ( `starttime` <= 1555037705 ) AND ( `endtime` >= 1555037705 ) ORDER BY starttime desc LIMIT 12   [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\XAMPP\htdocs\ThinkPHP\Home\Lib\Action\IndexAction.class.php 第 125 行.
+
+[ 2019-04-12T10:55:06+08:00 ] 127.0.0.1 /ThinkPHP/index.php/Index/newsb
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\XAMPP\htdocs\ThinkPHP\ThinkPHP\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `equip` [ RunTime:0.010000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\XAMPP\htdocs\ThinkPHP\ThinkPHP\Lib\Core\Db.class.php 第 568 行.
+SQL: SELECT * FROM `equip` WHERE ( `starttime` <= 1555037706 ) AND ( `endtime` >= 1555037706 ) ORDER BY starttime desc LIMIT 12   [ RunTime:0.001000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\XAMPP\htdocs\ThinkPHP\Home\Lib\Action\IndexAction.class.php 第 125 行.
+
+[ 2019-04-12T10:55:07+08:00 ] 127.0.0.1 /ThinkPHP/index.php/Index/newsb
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\XAMPP\htdocs\ThinkPHP\ThinkPHP\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `equip` [ RunTime:0.016000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\XAMPP\htdocs\ThinkPHP\ThinkPHP\Lib\Core\Db.class.php 第 568 行.
+SQL: SELECT * FROM `equip` WHERE ( `starttime` <= 1555037707 ) AND ( `endtime` >= 1555037707 ) ORDER BY starttime desc LIMIT 12   [ RunTime:0.001000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\XAMPP\htdocs\ThinkPHP\Home\Lib\Action\IndexAction.class.php 第 125 行.
+
+[ 2019-04-12T10:55:08+08:00 ] 127.0.0.1 /ThinkPHP/index.php/Index/newsb
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\XAMPP\htdocs\ThinkPHP\ThinkPHP\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `equip` [ RunTime:0.009000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\XAMPP\htdocs\ThinkPHP\ThinkPHP\Lib\Core\Db.class.php 第 568 行.
+SQL: SELECT * FROM `equip` WHERE ( `starttime` <= 1555037708 ) AND ( `endtime` >= 1555037708 ) ORDER BY starttime desc LIMIT 12   [ RunTime:0.001000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\XAMPP\htdocs\ThinkPHP\Home\Lib\Action\IndexAction.class.php 第 125 行.
+
+[ 2019-04-12T10:55:09+08:00 ] 127.0.0.1 /ThinkPHP/index.php/Index/newsb
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\XAMPP\htdocs\ThinkPHP\ThinkPHP\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `equip` [ RunTime:0.010000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\XAMPP\htdocs\ThinkPHP\ThinkPHP\Lib\Core\Db.class.php 第 568 行.
+SQL: SELECT * FROM `equip` WHERE ( `starttime` <= 1555037709 ) AND ( `endtime` >= 1555037709 ) ORDER BY starttime desc LIMIT 12   [ RunTime:0.001000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\XAMPP\htdocs\ThinkPHP\Home\Lib\Action\IndexAction.class.php 第 125 行.
+
+[ 2019-04-12T10:55:10+08:00 ] 0.0.0.0 /ThinkPHP/index.php/Index/newsb
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\XAMPP\htdocs\ThinkPHP\ThinkPHP\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `equip` [ RunTime:0.010000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\XAMPP\htdocs\ThinkPHP\ThinkPHP\Lib\Core\Db.class.php 第 568 行.
+SQL: SELECT * FROM `equip` WHERE ( `starttime` <= 1555037710 ) AND ( `endtime` >= 1555037710 ) ORDER BY starttime desc LIMIT 12   [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\XAMPP\htdocs\ThinkPHP\Home\Lib\Action\IndexAction.class.php 第 125 行.
+
+[ 2019-04-12T10:55:10+08:00 ] ERR: (ThinkException) 无法加载模块:Public
+[ 2019-04-12T10:55:11+08:00 ] 127.0.0.1 /ThinkPHP/index.php/Index/newsb
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\XAMPP\htdocs\ThinkPHP\ThinkPHP\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `equip` [ RunTime:0.011000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\XAMPP\htdocs\ThinkPHP\ThinkPHP\Lib\Core\Db.class.php 第 568 行.
+SQL: SELECT * FROM `equip` WHERE ( `starttime` <= 1555037711 ) AND ( `endtime` >= 1555037711 ) ORDER BY starttime desc LIMIT 12   [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\XAMPP\htdocs\ThinkPHP\Home\Lib\Action\IndexAction.class.php 第 125 行.
+
+[ 2019-04-12T10:55:12+08:00 ] 127.0.0.1 /ThinkPHP/index.php/Index/newsb
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\XAMPP\htdocs\ThinkPHP\ThinkPHP\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `equip` [ RunTime:0.012000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\XAMPP\htdocs\ThinkPHP\ThinkPHP\Lib\Core\Db.class.php 第 568 行.
+SQL: SELECT * FROM `equip` WHERE ( `starttime` <= 1555037712 ) AND ( `endtime` >= 1555037712 ) ORDER BY starttime desc LIMIT 12   [ RunTime:0.001000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\XAMPP\htdocs\ThinkPHP\Home\Lib\Action\IndexAction.class.php 第 125 行.
+
+[ 2019-04-12T10:55:13+08:00 ] 127.0.0.1 /ThinkPHP/index.php/Index/newsb
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\XAMPP\htdocs\ThinkPHP\ThinkPHP\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `equip` [ RunTime:0.008000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\XAMPP\htdocs\ThinkPHP\ThinkPHP\Lib\Core\Db.class.php 第 568 行.
+SQL: SELECT * FROM `equip` WHERE ( `starttime` <= 1555037713 ) AND ( `endtime` >= 1555037713 ) ORDER BY starttime desc LIMIT 12   [ RunTime:0.001000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\XAMPP\htdocs\ThinkPHP\Home\Lib\Action\IndexAction.class.php 第 125 行.
+
+[ 2019-04-12T10:55:14+08:00 ] 127.0.0.1 /ThinkPHP/index.php/Index/newsb
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\XAMPP\htdocs\ThinkPHP\ThinkPHP\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `equip` [ RunTime:0.008000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\XAMPP\htdocs\ThinkPHP\ThinkPHP\Lib\Core\Db.class.php 第 568 行.
+SQL: SELECT * FROM `equip` WHERE ( `starttime` <= 1555037714 ) AND ( `endtime` >= 1555037714 ) ORDER BY starttime desc LIMIT 12   [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\XAMPP\htdocs\ThinkPHP\Home\Lib\Action\IndexAction.class.php 第 125 行.
+
+[ 2019-04-12T10:55:15+08:00 ] 127.0.0.1 /ThinkPHP/index.php/Index/newsb
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\XAMPP\htdocs\ThinkPHP\ThinkPHP\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `equip` [ RunTime:0.012000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\XAMPP\htdocs\ThinkPHP\ThinkPHP\Lib\Core\Db.class.php 第 568 行.
+SQL: SELECT * FROM `equip` WHERE ( `starttime` <= 1555037715 ) AND ( `endtime` >= 1555037715 ) ORDER BY starttime desc LIMIT 12   [ RunTime:0.001000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\XAMPP\htdocs\ThinkPHP\Home\Lib\Action\IndexAction.class.php 第 125 行.
+
+[ 2019-04-12T10:55:16+08:00 ] 127.0.0.1 /ThinkPHP/index.php/Index/newsb
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\XAMPP\htdocs\ThinkPHP\ThinkPHP\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `equip` [ RunTime:0.010000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\XAMPP\htdocs\ThinkPHP\ThinkPHP\Lib\Core\Db.class.php 第 568 行.
+SQL: SELECT * FROM `equip` WHERE ( `starttime` <= 1555037716 ) AND ( `endtime` >= 1555037716 ) ORDER BY starttime desc LIMIT 12   [ RunTime:0.001000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\XAMPP\htdocs\ThinkPHP\Home\Lib\Action\IndexAction.class.php 第 125 行.
+
+[ 2019-04-12T10:55:17+08:00 ] 127.0.0.1 /ThinkPHP/index.php/Index/newsb
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\XAMPP\htdocs\ThinkPHP\ThinkPHP\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `equip` [ RunTime:0.015000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\XAMPP\htdocs\ThinkPHP\ThinkPHP\Lib\Core\Db.class.php 第 568 行.
+SQL: SELECT * FROM `equip` WHERE ( `starttime` <= 1555037717 ) AND ( `endtime` >= 1555037717 ) ORDER BY starttime desc LIMIT 12   [ RunTime:0.001000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\XAMPP\htdocs\ThinkPHP\Home\Lib\Action\IndexAction.class.php 第 125 行.
+
+[ 2019-04-12T10:55:18+08:00 ] 127.0.0.1 /ThinkPHP/index.php/Index/newsb
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\XAMPP\htdocs\ThinkPHP\ThinkPHP\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `equip` [ RunTime:0.009000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\XAMPP\htdocs\ThinkPHP\ThinkPHP\Lib\Core\Db.class.php 第 568 行.
+SQL: SELECT * FROM `equip` WHERE ( `starttime` <= 1555037718 ) AND ( `endtime` >= 1555037718 ) ORDER BY starttime desc LIMIT 12   [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\XAMPP\htdocs\ThinkPHP\Home\Lib\Action\IndexAction.class.php 第 125 行.
+
+[ 2019-04-12T10:55:19+08:00 ] 127.0.0.1 /ThinkPHP/index.php/Index/newsb
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\XAMPP\htdocs\ThinkPHP\ThinkPHP\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `equip` [ RunTime:0.007000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\XAMPP\htdocs\ThinkPHP\ThinkPHP\Lib\Core\Db.class.php 第 568 行.
+SQL: SELECT * FROM `equip` WHERE ( `starttime` <= 1555037719 ) AND ( `endtime` >= 1555037719 ) ORDER BY starttime desc LIMIT 12   [ RunTime:0.001000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\XAMPP\htdocs\ThinkPHP\Home\Lib\Action\IndexAction.class.php 第 125 行.
+
+[ 2019-04-12T10:55:20+08:00 ] 127.0.0.1 /ThinkPHP/index.php/Index/newsb
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\XAMPP\htdocs\ThinkPHP\ThinkPHP\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `equip` [ RunTime:0.009000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\XAMPP\htdocs\ThinkPHP\ThinkPHP\Lib\Core\Db.class.php 第 568 行.
+SQL: SELECT * FROM `equip` WHERE ( `starttime` <= 1555037720 ) AND ( `endtime` >= 1555037720 ) ORDER BY starttime desc LIMIT 12   [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\XAMPP\htdocs\ThinkPHP\Home\Lib\Action\IndexAction.class.php 第 125 行.
+
+[ 2019-04-12T10:55:21+08:00 ] 127.0.0.1 /ThinkPHP/index.php/Index/newsb
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\XAMPP\htdocs\ThinkPHP\ThinkPHP\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `equip` [ RunTime:0.012000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\XAMPP\htdocs\ThinkPHP\ThinkPHP\Lib\Core\Db.class.php 第 568 行.
+SQL: SELECT * FROM `equip` WHERE ( `starttime` <= 1555037721 ) AND ( `endtime` >= 1555037721 ) ORDER BY starttime desc LIMIT 12   [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\XAMPP\htdocs\ThinkPHP\Home\Lib\Action\IndexAction.class.php 第 125 行.
+
+[ 2019-04-12T10:55:22+08:00 ] 127.0.0.1 /ThinkPHP/index.php/Index/newsb
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\XAMPP\htdocs\ThinkPHP\ThinkPHP\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `equip` [ RunTime:0.008000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\XAMPP\htdocs\ThinkPHP\ThinkPHP\Lib\Core\Db.class.php 第 568 行.
+SQL: SELECT * FROM `equip` WHERE ( `starttime` <= 1555037722 ) AND ( `endtime` >= 1555037722 ) ORDER BY starttime desc LIMIT 12   [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\XAMPP\htdocs\ThinkPHP\Home\Lib\Action\IndexAction.class.php 第 125 行.
+
+[ 2019-04-12T10:55:23+08:00 ] 127.0.0.1 /ThinkPHP/index.php/Index/newsb
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\XAMPP\htdocs\ThinkPHP\ThinkPHP\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `equip` [ RunTime:0.009000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\XAMPP\htdocs\ThinkPHP\ThinkPHP\Lib\Core\Db.class.php 第 568 行.
+SQL: SELECT * FROM `equip` WHERE ( `starttime` <= 1555037723 ) AND ( `endtime` >= 1555037723 ) ORDER BY starttime desc LIMIT 12   [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\XAMPP\htdocs\ThinkPHP\Home\Lib\Action\IndexAction.class.php 第 125 行.
+
+[ 2019-04-12T10:55:24+08:00 ] 127.0.0.1 /ThinkPHP/index.php/Index/newsb
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\XAMPP\htdocs\ThinkPHP\ThinkPHP\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `equip` [ RunTime:0.009000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\XAMPP\htdocs\ThinkPHP\ThinkPHP\Lib\Core\Db.class.php 第 568 行.
+SQL: SELECT * FROM `equip` WHERE ( `starttime` <= 1555037724 ) AND ( `endtime` >= 1555037724 ) ORDER BY starttime desc LIMIT 12   [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\XAMPP\htdocs\ThinkPHP\Home\Lib\Action\IndexAction.class.php 第 125 行.
+
+[ 2019-04-12T10:55:25+08:00 ] ERR: (ThinkException) 无法加载模块:s17.cnzz.com
+[ 2019-04-12T10:55:30+08:00 ] ERR: (ThinkException) 无法加载模块:s17.cnzz.com
+[ 2019-04-12T10:55:31+08:00 ] ERR: (ThinkException) 无法加载模块:s17.cnzz.com
+[ 2019-04-12T10:55:32+08:00 ] ERR: (ThinkException) 无法加载模块:s17.cnzz.com
+[ 2019-04-12T10:55:37+08:00 ] ERR: (ThinkException) 无法加载模块:s17.cnzz.com
+[ 2019-04-12T10:55:40+08:00 ] ERR: (ThinkException) 无法加载模块:s17.cnzz.com
+[ 2019-04-12T11:47:51+08:00 ] ERR: (ThinkException) 无法加载模块:Public
+[ 2019-04-12T11:47:52+08:00 ] 0.0.0.0 /ThinkPHP/index.php/Index/newsb
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\XAMPP\htdocs\ThinkPHP\ThinkPHP\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `equip` [ RunTime:0.009000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\XAMPP\htdocs\ThinkPHP\ThinkPHP\Lib\Core\Db.class.php 第 568 行.
+SQL: SELECT * FROM `equip` WHERE ( `starttime` <= 1555040872 ) AND ( `endtime` >= 1555040872 ) ORDER BY starttime desc LIMIT 12   [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\XAMPP\htdocs\ThinkPHP\Home\Lib\Action\IndexAction.class.php 第 125 行.
+
+[ 2019-04-12T11:47:53+08:00 ] 0.0.0.0 /ThinkPHP/index.php/Index/newsb
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\XAMPP\htdocs\ThinkPHP\ThinkPHP\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `equip` [ RunTime:0.010000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\XAMPP\htdocs\ThinkPHP\ThinkPHP\Lib\Core\Db.class.php 第 568 行.
+SQL: SELECT * FROM `equip` WHERE ( `starttime` <= 1555040873 ) AND ( `endtime` >= 1555040873 ) ORDER BY starttime desc LIMIT 12   [ RunTime:0.001000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\XAMPP\htdocs\ThinkPHP\Home\Lib\Action\IndexAction.class.php 第 125 行.
+
+[ 2019-04-12T11:47:54+08:00 ] 0.0.0.0 /ThinkPHP/index.php/Index/newsb
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\XAMPP\htdocs\ThinkPHP\ThinkPHP\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `equip` [ RunTime:0.010000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\XAMPP\htdocs\ThinkPHP\ThinkPHP\Lib\Core\Db.class.php 第 568 行.
+SQL: SELECT * FROM `equip` WHERE ( `starttime` <= 1555040874 ) AND ( `endtime` >= 1555040874 ) ORDER BY starttime desc LIMIT 12   [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\XAMPP\htdocs\ThinkPHP\Home\Lib\Action\IndexAction.class.php 第 125 行.
+
+[ 2019-04-12T11:47:55+08:00 ] 0.0.0.0 /ThinkPHP/index.php/Index/newsb
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\XAMPP\htdocs\ThinkPHP\ThinkPHP\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `equip` [ RunTime:0.015000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\XAMPP\htdocs\ThinkPHP\ThinkPHP\Lib\Core\Db.class.php 第 568 行.
+SQL: SELECT * FROM `equip` WHERE ( `starttime` <= 1555040875 ) AND ( `endtime` >= 1555040875 ) ORDER BY starttime desc LIMIT 12   [ RunTime:0.001000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\XAMPP\htdocs\ThinkPHP\Home\Lib\Action\IndexAction.class.php 第 125 行.
+
+[ 2019-04-12T11:47:56+08:00 ] ERR: (ThinkException) 无法加载模块:s17.cnzz.com
+[ 2019-04-12T11:47:57+08:00 ] 0.0.0.0 /ThinkPHP/index.php/Index/jsauct/p/1
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\XAMPP\htdocs\ThinkPHP\ThinkPHP\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `equip` [ RunTime:0.010000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\XAMPP\htdocs\ThinkPHP\ThinkPHP\Lib\Core\Db.class.php 第 568 行.
+SQL: SELECT * FROM `equip` WHERE ( `starttime` <= 1555040877 ) AND ( `endtime` >= 1555040877 ) ORDER BY starttime desc LIMIT 0,10   [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\XAMPP\htdocs\ThinkPHP\Home\Lib\Action\IndexAction.class.php 第 254 行.
+
+[ 2019-04-12T11:47:58+08:00 ] 0.0.0.0 /ThinkPHP/index.php/Index/jsauct/p/1
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\XAMPP\htdocs\ThinkPHP\ThinkPHP\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `equip` [ RunTime:0.016000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\XAMPP\htdocs\ThinkPHP\ThinkPHP\Lib\Core\Db.class.php 第 568 行.
+SQL: SELECT * FROM `equip` WHERE ( `starttime` <= 1555040878 ) AND ( `endtime` >= 1555040878 ) ORDER BY starttime desc LIMIT 0,10   [ RunTime:0.001000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\XAMPP\htdocs\ThinkPHP\Home\Lib\Action\IndexAction.class.php 第 254 行.
+
+[ 2019-04-12T11:47:59+08:00 ] 0.0.0.0 /ThinkPHP/index.php/Index/jsauct/p/1
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\XAMPP\htdocs\ThinkPHP\ThinkPHP\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `equip` [ RunTime:0.009000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\XAMPP\htdocs\ThinkPHP\ThinkPHP\Lib\Core\Db.class.php 第 568 行.
+SQL: SELECT * FROM `equip` WHERE ( `starttime` <= 1555040879 ) AND ( `endtime` >= 1555040879 ) ORDER BY starttime desc LIMIT 0,10   [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\XAMPP\htdocs\ThinkPHP\Home\Lib\Action\IndexAction.class.php 第 254 行.
+
+[ 2019-04-12T11:47:59+08:00 ] ERR: (ThinkException) 无法加载模块:s17.cnzz.com
+[ 2019-04-12T15:18:57+08:00 ] ERR: (ThinkException) 无法加载模块:s17.cnzz.com
+[ 2019-04-12T15:21:29+08:00 ] ERR: (ThinkException) 无法加载模块:s17.cnzz.com

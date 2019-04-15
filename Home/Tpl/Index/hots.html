@@ -1,0 +1,99 @@
+<include file="./Home/Tpl/Common/header.html" />
+
+	<script>
+		$(document).ready(function(){
+
+			function get_content_new(){
+				alert(4);
+				//$.post(u,function(data){
+					//接受ajax返回的数据
+
+					//先将数据进行一次清空
+
+					//将新数据append到显示位置
+
+					//再次调用函数get_content(url)发送ajax请求
+
+					
+				//})
+				get_content_timeOut();
+				get_content_new();
+			}
+			//当第一次进入首页的时候显示最新拍卖，ajax函数要自动调用一次，显示最新拍卖的
+			get_content_new();
+			
+		})
+</script>
+	<!-- #auctionDetail -->
+	<div id="auctionDetail" class="mainbody clearfix">
+	
+		<div id="subpageBanner" class="page960">
+			<a  href="" tppabs="http://game.haopai365.com/app/register" >
+			<img src="__PUBLIC__/Home/Images/a-d/1296011542.jpg" tppabs="http://game.haopai365.com/static/a-d/1296011542.jpg" alt="好拍网，注册得拍点，快来参与秒杀、拍卖吧！" width="960px" height="120px" border="0"/></a>
+		</div>
+		
+		<!-- #auctioningList -->
+		<div id="auctioningList" class="container clearfix">
+		
+			<div class="tabview">
+				<h2 class="title fl">热门商品</h2>
+			</div>
+			
+			<!-- Start: iterator -->
+				<for start="0" end="10">
+						<div class="AuctionVER" id="zone_57618">
+							
+							<div class="auTitle">第57618期</div>
+
+							<div class="proImg">
+								<a href="__URL__/info/id/57618" tppabs="http://game.haopai365.com/app/infopid-57618.html"  title="17420金=200元 龙之谷华南电信一区2服-烈焰之怒 ">
+									<img alt="拍卖17420金=200元 龙之谷华南电信一区2服-烈焰之怒 " src="__PUBLIC__/Uploads/1323404739603.gifmiddle.jpg" tppabs="http://game.haopai365.com/upload/product/201112/10/1323448679376.jpgmiddle.jpg"/>
+								</a>
+							</div>
+						
+							<div class="detail">
+								<h3>
+									<a href="__URL__/info/id/57618" tppabs="http://game.haopai365.com/app/infopid-57618.html" title="拍卖17420金=200元 龙之谷华南电信一区2服-烈焰之怒 ">17420金=200元 龙之谷华南电信一区2服-烈焰之怒 </a>
+									<span class="fmMingLiU">(荷兰式拍卖)</span>
+								</h3>
+							</div>
+							
+							<div class="countdown f24">
+								<span id="time_57618" title="剩余时间">--:--:--</span>
+								<input type="hidden" name="closeto_finish" class="closeto_finish" id="57618" value="0" /> 
+							</div>
+							
+							<div class="price f22">
+								<span id="price_57618" title="当前价格">&yen;199.05</span>
+							</div>
+							
+							<div class="bidder">
+								<p>参与人数：<strong id="bid_count_57618">0</strong></p>
+								<p>市场价：<strong class="purchase">¥200.0</strong></p>
+								<p>库存：1件(已成交<strong id="end_count_57618">0</strong>件)</p>
+						
+								<span class="auctionButton">
+									<span id="bid_btn_57618" class="button" >
+										<span class="first-child">
+											<a id="bid_57618" name="57618" href="__URL__/info/id/57618" tppabs="http://game.haopai365.com/app/infopid-57618.html" class="bidbutton bidImgButton bidImgButton_live" ></a>
+										</span>
+									</span>
+								</span>
+							</div>
+						</div>
+				</for>	
+				
+				<!-- End: iterator -->
+				
+		</div>		
+			<!--end: Auction product -->	
+		<!-- .pages -->			
+			<div class="pages cb clearfix"><a href="auctioning-1.html" tppabs="http://game.haopai365.com/app/auctioning-1.html" class='firstPage'></a><a href="auctioning-1.html" tppabs="http://game.haopai365.com/app/auctioning-1.html" class='prevPage'></a><a href="auctioning-1.html" tppabs="http://game.haopai365.com/app/auctioning-1.html" class='currentPage'>1</a><span>|</span><a href="auctioning-2.html" tppabs="http://game.haopai365.com/app/auctioning-2.html" class='pageNum'>2</a><a href="auctioning-2.html" tppabs="http://game.haopai365.com/app/auctioning-2.html" class='nextPage'></a><a href="auctioning-2.html" tppabs="http://game.haopai365.com/app/auctioning-2.html" class='lastPage'></a>
+
+				<!-- .pages end -->
+			</div>
+		<!-- #auctioningList end -->
+	</div>
+	<!-- #auctionDetail end -->
+
+<include file="./Home/Tpl/Common/_footer.html" />

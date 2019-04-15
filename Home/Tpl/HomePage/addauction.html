@@ -1,0 +1,106 @@
+<extend name="index" />
+
+<block name="change">
+		<!-- Start current auction list -->
+		<div class="container">
+			<div class="tabview"><h2 class="title fl">添加商品</h2></div>
+			
+			
+				<div class="content">
+					
+				<div class="mb_tb_form">
+				<form name="mbform" id="mbform" action="__URL__/doAddauction" method="post" enctype="multipart/form-data">
+					<input type="hidden" name="uid" value="<{$Think.session.id}>"  />
+				<table class="mb_tb">
+					  <tr>
+					  	<td class="td_title">商品名称：</td>
+					  	<td>
+					  		<input type="text" value="" style="width: 201px;" class="input" name="eqname" id="account" />
+					  	</td>
+					  	
+					  </tr>
+
+					<tr>
+						<td class="td_title">生产厂家：</td>
+						<td>
+							<input type="text" value="" style="width: 201px;" class="input" name="vender" id="vender" />
+						</td>
+
+					</tr>
+					  
+					  <tr>
+					  	<td class="td_title">商品类别：</td>
+					  	<td>					  	  
+					  		<select name="quid">
+								<foreach name="dq" item="vo">
+									<option value="<{$vo.id}>"><{$vo.newpath|explode='-',###|count|str_repeat='_',###}><{$vo.typename}></option><br />
+								</foreach>
+							</select>
+					  	</td>					  	
+					  </tr>
+
+	
+					  <tr>
+					  	<td class="td_title">价格：</td>					  	
+					  	<td>					  	  
+					  		<input type="text" value="" style="width: 201px;" class="input" name="price" id="qq" />
+					  	</td>
+					  	
+					  </tr>
+					  
+					  <tr>
+					  	<td class="td_title">商品图片：</td>
+					  	<td>					  	  
+					  		<input type="file" value="" style="width: 201px;height:20px;border:none" class="input" name="pic" id="msn" />
+					  	</td>
+					  	
+					  </tr>
+					  
+					  <tr>
+					  	<td class="td_title" >开拍时间 </td>					  	
+					  	<td>					  	  
+							<input type="text" name="starttime" id="startTime" class="input" /> <br />
+					  	</td>					  	
+					  </tr>
+					  
+					  <tr>
+					  	<td class="td_title">拍卖时长: </td>				  	
+					  	<td>					  	  
+								<input type="radio" name="hour" id="endTime" class="input" value="12" checked="checked">12小时
+								<input type="radio" name="hour" id="endTime" class="input" value="24">24小时        
+								<span style="color:red">注:每小时的费用为1元</span>
+					  	</td>
+					  	
+					  </tr>
+					  
+					  <tr>
+					  	<td class="td_title">商品简介: </td>				  	
+					  	<td>					  	  
+					  		<textarea cols="40" rows="4" name="eqdes"></textarea>
+					  	</td>
+					  	
+					  </tr>
+					  
+					  
+					  <tr>
+					  	<td colspan="3"  class="mb_saveBtn">
+					  	<span class="button button-hilite">
+							<button id="subBtn" class="strong" type="submit">添加</button>
+						</span>
+					  	</td>
+					  </tr>
+					</table>
+					</form>
+				</div>
+			</div>
+					
+		</div>
+		<!-- End current auction list -->
+<script type="text/javascript" language="javascript">
+$(document).ready(function(){
+	$('#startTime').datetimepicker();
+	$('#endTime').datetimepicker();
+	$('#startTime,#endTime').bind("focus",function(){$('#ui-datepicker-div').css({"z-index":500000}); });
+});
+</script>
+</block>

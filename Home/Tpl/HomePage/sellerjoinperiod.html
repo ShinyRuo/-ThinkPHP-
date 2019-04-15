@@ -1,0 +1,207 @@
+<extend name="index" />
+
+<block name="change">
+
+	<!-- Start current auction list -->
+	<div class="container">
+				<div class="tabview"><h2 class="title fl">拍卖统计</h2></div>
+				
+				<div class="clearfix" id="filterTool">
+					<form name="searchForm" action="/app/homepage/joinperiod" method="post">
+						<div style="margin:5px 10px;height:20px;width:auto;float:left;line-height:25px;">
+							拍卖时间 ：<input type="text" name="startTime" id="startTime" class="input" value="2013-04-08 23:39" />
+							- <input type="text" name="endTime" id="endTime" class="input" value="2013-04-15 23:39" />
+						</div>
+						
+						<div style="margin:5px 0px;width:50px;height:20px;float:left;line-height:25px;">
+							<input type="submit" class="sendReq fl" value="查询" />
+						</div>
+						
+					</form>
+				</div>
+				
+				<div class="content">
+					
+					<table class="chart notice">
+					  <tr>
+					    <th scope="col" width="92">商品</th>
+					    <th scope="col" width="12%">拍卖方式</th>
+					    <th scope="col" width="12%">市场价</th>
+					    <th scope="col" width="10%">拍卖数量 </th>
+					    <th scope="col" width="10%">参与人数</th>
+					    <th scope="col" width="12%">我的出价</th>
+					    <th scope="col" width="20%">出价时间 </th>
+					    <th scope="col">拍卖状态 </th>
+					  </tr>
+					  
+					   <tr><td colspan="8">&nbsp;</td></tr>
+					 
+					  <!-- start iterator -->
+						
+					 <tr>
+						    <td colspan="9" class="order-hd">
+						     <div class="order_t_left">
+						                期号：58373 期
+						      </div>
+						      <div class="order_t_right">
+						   		商品名称：<span>900金 魔兽世界三区灰谷</span>
+						      </div> 
+						   </td>
+					  </tr>
+					  
+					<tr>
+					    <td align="center" height="67px" >
+					    	<a target="_blank" href="/app/infopid-58373.html" title="查看详情">
+					    	<img src="/upload/product/201112/9/1323398134779.jpgmiddle.jpg" alt="900金 魔兽世界三区灰谷" /></a>
+					    </td>
+					    
+					    <td align="center">
+							荷兰式拍卖
+					    </td>
+					    
+					    <td align="center" class="price">
+							<span id="price_58373" title="市场价">&yen;1.0</span>
+					    </td>
+					    
+					    <td align="center">
+							899件<br/>成交<span style="color:#C31A1F;" id="end_count_58373">0</span>件
+					    </td>
+					    
+					    
+					    <td align="center" class="price">
+							<strong id="bid_count_58373">1</strong>人
+					    </td>					    
+					    
+					    <td align="center">
+							<span id="myPriceShow_58373" class="price">&yen;0.0</span>元<br/>购<span style="color:#C31A1F;"  id="myCountShow_58373">1</span>件
+					    </td>
+					    
+					    
+					    <td align="center">
+					    2013-04-15 23:23
+					    </td>
+					    
+					    <td align="center">
+					    <span style='color:#C31A1F;'>失败</span>
+					    </td>
+					    
+					  </tr>
+					  
+					 <tr>
+						    <td colspan="9" class="order-hd">
+						     <div class="order_t_left">
+						                期号：58343 期
+						      </div>
+						      <div class="order_t_right">
+						   		商品名称：<span>64500金=300元 剑侠情缘3电信三区 </span>
+						      </div> 
+						   </td>
+					  </tr>
+					  
+					<tr>
+					    <td align="center" height="67px" >
+					    	<a target="_blank" href="/app/infopid-58343.html" title="查看详情">
+					    	<img src="/upload/product/201112/10/1323450672083.jpgmiddle.jpg" alt="64500金=300元 剑侠情缘3电信三区 " /></a>
+					    </td>
+					    
+					    <td align="center">
+							荷兰式拍卖
+					    </td>
+					    
+					    <td align="center" class="price">
+							<span id="price_58343" title="市场价">&yen;300.0</span>
+					    </td>
+					    
+					    <td align="center">
+							1件<br/>成交<span style="color:#C31A1F;" id="end_count_58343">0</span>件
+					    </td>
+					    
+					    
+					    <td align="center" class="price">
+							<strong id="bid_count_58343">1</strong>人
+					    </td>					    
+					    
+					    <td align="center">
+							<span id="myPriceShow_58343" class="price">&yen;0.0</span>元<br/>购<span style="color:#C31A1F;"  id="myCountShow_58343">1</span>件
+					    </td>
+					    
+					    
+					    <td align="center">
+					    2013-04-15 11:05
+					    </td>
+					    
+					    <td align="center">
+					    <span style='color:#C31A1F;'>失败</span>
+					    </td>
+					    
+					  </tr>
+					  
+					 <tr>
+						    <td colspan="9" class="order-hd">
+						     <div class="order_t_left">
+						                期号：58029 期
+						      </div>
+						      <div class="order_t_right">
+						   		商品名称：<span>34780金=400元 龙之谷华南电信四区2服-屠龙之谷 即买即发</span>
+						      </div> 
+						   </td>
+					  </tr>
+					  
+					<tr>
+					    <td align="center" height="67px" >
+					    	<a target="_blank" href="/app/infopid-58029.html" title="查看详情">
+					    	<img src="/upload/product/201112/9/1323404739603.gifmiddle.jpg" alt="34780金=400元 龙之谷华南电信四区2服-屠龙之谷 即买即发" /></a>
+					    </td>
+					    
+					    <td align="center">
+							荷兰式拍卖
+					    </td>
+					    
+					    <td align="center" class="price">
+							<span id="price_58029" title="市场价">&yen;400.0</span>
+					    </td>
+					    
+					    <td align="center">
+							1件<br/>成交<span style="color:#C31A1F;" id="end_count_58029">0</span>件
+					    </td>
+					    
+					    
+					    <td align="center" class="price">
+							<strong id="bid_count_58029">1</strong>人
+					    </td>					    
+					    
+					    <td align="center">
+							<span id="myPriceShow_58029" class="price">&yen;0.0</span>元<br/>购<span style="color:#C31A1F;"  id="myCountShow_58029">1</span>件
+					    </td>
+					    
+					    
+					    <td align="center">
+					    2013-04-15 11:04
+					    </td>
+					    
+					    <td align="center">
+					    <span style='color:#C31A1F;'>失败</span>
+					    </td>
+					    
+					  </tr>
+					  
+					  <!-- end iterator -->
+				</table>
+				
+				<!-- .pages --这里准备分页>			
+					
+				<!-- .pages end -->
+				
+				</div>
+			</div>
+	<!-- End current auction list -->
+
+
+<script type="text/javascript" language="javascript">
+$(document).ready(function(){
+	$('#startTime').datetimepicker();
+	$('#endTime').datetimepicker();
+	$('#startTime,#endTime').bind("focus",function(){$('#ui-datepicker-div').css({"z-index":500000}); });
+});
+</script>
+</block>
