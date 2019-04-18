@@ -69,7 +69,7 @@
 		<div id="auctionInformation" class="container clearfix">
 			<div class="tabview">
 				<h1 class="title fl" id="titleNav">
-					<{$dq}>&nbsp;<span>>></span>&nbsp;<{$zy}>&nbsp;<span>>></span>&nbsp;<{$bj}>&nbsp;<span>>></span>&nbsp;<{$eqname}>
+					<{$dq}>&nbsp;<span>>></span>&nbsp;<{$vender}>&nbsp;<span>>></span>&nbsp;<{$eqname}>
 					
 				</h1>
 				
@@ -134,7 +134,7 @@
 					
 					<form action="__URL__/buy" method="post" name="myForm">
 						<input type="hidden" name="supermoney" value=""  id="supermoney" />
-						<input type="hidden" name="eqid" value="" id="eqid" />
+						<input type="hidden" name="eqid" value="<{$eqid}>" id="eqid" />
 						<div id="myPriceZone" title="我的出价">
 							我的出价：&yen;&nbsp;<input type="text" value="" name="aumoney" id="myprice" class="myprice" size="5px" onblur="keep2Num(this);" maxlength="6" onkeyup="clearNoNum(this);"/>&nbsp;
 						</div>
@@ -259,7 +259,6 @@
 				<div class="cb">
 				  <{$eqdes}>
 				</div>
-				<div class="cb">好拍网提醒您：商品以实物为准。</div>
 			</div>
 		</div>
 		<!-- product detail end -->

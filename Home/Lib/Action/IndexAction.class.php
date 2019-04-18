@@ -186,10 +186,9 @@ class IndexAction extends Action {
 			if(!$auction->add()){
 				$this->error('竞价失败，请联系管理员');
 			}
-			
 			$equip = D('equip');
 			$num = $equip->where(array('id'=>$_POST['eqid']))->setInc('autimes');
-			if(!$num > 0){
+			if($num <= 0){
 				$this->error('竞价失败，请联系管理员');
 			}	
 		}

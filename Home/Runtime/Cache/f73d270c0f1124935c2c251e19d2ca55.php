@@ -165,271 +165,258 @@
 	<!-- #header end -->
 	
 	
-	<script>
-		$(document).ready(function(){
 
-			function get_content_info(){
-				//alert(<?php echo ($_GET['id']); ?>);
-				$.post("__URL__/jsinfo/id/<?php echo ($eqid); ?>",function(obj){
-					//接受ajax返回的数据
-					//var obj=eval("data");
-					//alert(data);
-					//alert(obj[0]['eqname']);
-					var eqname=obj[0]['eqname'];
-					var pic=obj[0]['pic'];
-					//alert(pic);
-					var zdb="类别:"+obj[i]['dq'];
-
-					//#算出所剩时间，结束时间-当前时间
-					var sheng=obj[0]["sheng"];
-					//alert(sheng);
-					//var minutes = Math.floor(sheng%60);   
-					var xiaoshi = Math.floor(sheng/3600);  
-					var fenzhong=Math.floor((sheng-Math.floor(sheng/3600)*3600)/60);
-					var miaos=sheng-Math.floor(sheng/3600)*3600;
-					miaos=miaos-fenzhong*60;
-					//var price=obj[i]['auction'];
-					var maxprice;
-					if(obj[0]['auction']==null){
-						//alert(1);
-						maxprice=obj[0]['price'];
-					}else{
-						maxprice=obj[0]['auction'][0]['aumoney']
-					}
-					var price=obj[0]['price'];
-					
-					//参与人数
-					var autimes=obj[0]['autimes'];
-					$("#jsinfo").html("");
-					var str='<div class="countdown f30" id="hot_time_57618" title="剩余时间">'+xiaoshi+':'+fenzhong+':'+miaos+'</div><div class="price f24" title="拍卖价"><span id="hot_price_57618">&yen;'+maxprice+'</span></div><div class="bidder notice"></div><div id="saveBuy" class="clearfix notice"><div class="bidder"><p class="clearfix"><span>起拍价：</span><strong class="purchase">&yen;'+price+'</strong></p><p class="clearfix" ><span>竞拍次数：</span><strong class="normal" id="hot_bid_count_57618">'+autimes+'</strong></p><p class="clearfix" ><span>拍卖方式：</span><strong class="normal" id="hot_bid_count_57618">荷兰式拍卖</strong></p></div></div>';
-
-					//先将数据进行一次清空
-					$("#jsinfo").html(str);
-					$('#supermoney').val(maxprice) ;
-					$('#eqid').val(obj[0]['id']);
-
-					//字符追加到div-liveAuctionList
-					//$("#liveAuctionList").append(str);
-
-					//将新数据append到显示位置
-				setTimeout(get_content_info(),10000);
-					//再次调用函数get_content(url)发送ajax请求
-
-					
-				},"json")
-			//	get_content_timeOut();
-				//get_content_new();
-			}
-			//当第一次进入首页的时候显示最新拍卖，ajax函数要自动调用一次，显示最新拍卖的
-			//
-			
-			get_content_info();
-			
-		})
-</script>
-
-	<!-- .mainbody -->
-	<div id="auctionDetail" class="mainbody">
+	<!-- #auctionDetail -->
+	<div id="auctionDetail" class="mainbody clearfix">
 	
-		<!-- Auction Information -->
-		<div id="auctionInformation" class="container clearfix">
+		
+		<div id="subpageBanner" class="page960">
+			<a target="_blank" href="/app/register" >
+				<img src="__PUBLIC__/Home/Images/a-d/1296011542.jpg" alt="好拍网、注册得拍点，快来参与秒杀、拍卖吧！" width="960px" height="120px" border="0"/></a>
+			</a>		
+		</div>
+		
+		<!-- #productList -->
+		<div id="productList" class="container">
+	
 			<div class="tabview">
-				<h1 class="title fl" id="titleNav">
-					<?php echo ($dq); ?>&nbsp;<span>>></span>&nbsp;<?php echo ($vender); ?>&nbsp;<span>>></span>&nbsp;<?php echo ($eqname); ?>
-					
-				</h1>
-				
-						
-						
+				<h2 class="title fl">搜索结果</h2>
 			</div>
-
-			<!-- #slideshow -->
-			<div id="slideshow" class="container clearfix" style="background:#FFFFFF;">
 			
-				<div id="proImage">
-				
-					<img id="bigimg0" style="width:400px;height:400px;" alt="好拍网拍卖、秒杀17420金=200元 龙之谷华南电信一区2服-烈焰之怒 " src="__PUBLIC__/Uploads/pics/b_<?php echo ($picc); ?>" tppabs="http://game.haopai365.com/upload/product/201112/10/1323448679376.jpgbig.jpg"  />
-					
-				</div>
-
-				<div id="proThumbnails">
-					<ul class="clearfix">
-						
-							<li>
-								<a rel="bigimg0" href="javascript:void(0);">
-									<img style="width:50px;height:40px;" class="sup" alt="好拍网拍卖、秒杀17420金=200元 龙之谷华南电信一区2服-烈焰之怒 " src="__PUBLIC__/Uploads/pics/b_<?php echo ($picc); ?>" tppabs="http://game.haopai365.com/upload/product/201112/10/1323448679376.jpgsmall.jpg" />
-								</a>
-							</li>
-							
-					</ul>
-
-				</div>
-			</div>
-			<!-- #slideshow end -->
 			
-			<!-- #bidInfo -->
-			<div id="bidInfo" class="container clearfix" style="background:#FFFFFF;">
+			<div class="content">
+
+			<table class="chart">
+				<tr>
+				<th width="64%" class="tc">商品</th>
+				<th width="36%" class="tc">状态</th>
+				</tr>
+				<!--Start: iterator  -->
 				
-				<!-- #bidnow -->
-				<div id="bidnow">
-					
-					<div id="jsinfo">
-					
-					</div>
-					
-
-
-
-					
-					<div class="myline"></div>
-					
-					<div id="myInfoZone">
-						<div class="avatar_left">
-							<a class="userIcon" href="javascript:void(0);"	id="hot_bidder_icon_57618">
-							<?php if(($_SESSION['pic']=='')): ?><img style="width:50px;height:50px;"  src="__PUBLIC__/Uploads/pic/big_noavatar.gif" style="width:50px;height:50px;"/>
-							<?php else: ?> 
-									<img style="width:50px;height:50px;"  src="__PUBLIC__/Uploads/pic/b_<?php echo (session('pic')); ?>" style="width:50px;height:50px;"/><?php endif; ?>
-							</a>
-						</div>
-						<div class="avatar_right">
-							<a class="userName" href="javascript:void(0);" id="hot_bidder_57618" ><?php echo (session('username')); ?></a><br/>
-						</div>
-					</div>
-					
-					<form action="__URL__/buy" method="post" name="myForm">
-						<input type="hidden" name="supermoney" value=""  id="supermoney" />
-						<input type="hidden" name="eqid" value="<?php echo ($eqid); ?>" id="eqid" />
-						<div id="myPriceZone" title="我的出价">
-							我的出价：&yen;&nbsp;<input type="text" value="" name="aumoney" id="myprice" class="myprice" size="5px" onblur="keep2Num(this);" maxlength="6" onkeyup="clearNoNum(this);"/>&nbsp;
-						</div>
-					</form>
-					
-					<div class="bidButton" id="hotButton">				
-						<span class="auctionButton">
-							<span id='hot_bid_btn_57618' class="button" >
-								<span class="first-child">
-									<a id="submit" name="57618"  class="bidbutton bidImgButton bidImgButton_live"></a>
+			<?php if(is_array($list)): foreach($list as $key=>$vo): ?><tr class="AuctionHOR EndingAuction">
+							<td>
+								<div class="proImg">
 									
-									<script>
-										$(function(){
-											$('#submit').click(function(){
-												$('form[name="myForm"]').submit();
-											});
-										});
-									</script>
+									<img style="width:120px;height:80px;" alt="<?php echo ($vo["eqdes"]); ?>" src="__PUBLIC__/Uploads/pics/b_<?php echo ($vo["pic"]); ?>" tppabs="http://game.haopai365.com/upload/product/201112/10/1323448840181.jpgmiddle.jpg"  />
 									
-								</span>
-							</span>
-						</span>
-					</div>
-					
-				</div>
-				<!-- #bidnow end -->
-				<div id="auctionAd">
-					<a target="_blank" href=""><img
-							src="__PUBLIC__/Home/Images/a-d/detail-1.jpg" tppabs="http://game.haopai365.com/static/a-d/detail-1.jpg"
-							alt="好拍网，拍到了即低价购买，绝对超低价。拍不到可保价购买，绝对零风险。好拍网公正拍卖、正品保证。" width="280" height="65"
-							border="0" />
-					</a>
-				</div>
-				<!-- #start history -->
-				
-<!-- 				<div id="bidHistory" class="container">
-					<div class="tabview">
-						<ul class="tab">
-
-							<li class="on" id="ctrl_0">
-								<a href="#bidHistoryList">拍卖纪录</a>
-							</li>
-							
-							<li id="ctrl_1">
-								<a href="#mybidHistoryList">商家信息</a>
-							</li>
-						</ul>
-						
-					</div>
-					
-					
-					<div id="bidHistoryList" class="content">
-						<span>暂无拍卖者...</span>
-					</div>
-						
-
-					<div id="mybidHistoryList" class="content" style="display:none;margin:0;padding:0;">
-						<table class="chart notice" style="border:0px;">
-						<tr>
-							<td colspan="2" align="center">
-								<img src="__PUBLIC__/Home/Images/common/middle_noavatar.gif" tppabs="http://game.haopai365.com/upload/avatar/00/000/00/middle_14.jpg" /><br/>
-								<a id="hot_bidder_184" href="javascript:void(0);" class="userName">龙腾九天</a>
-							</td>
-
-						</tr>
-						
-						<tr>
-							<td width="30%">信用等级</td>
-
-							<td title="等级1">
-							<img src="__PUBLIC__/Home/Images/common/star_level1.png" tppabs="http://game.haopai365.com/static/images/common/star_level1.png" />
-							</td>
-						</tr>
-						
-	
-						<tr>
-							<td width="30%">QQ</td>
-
-							<td><span class="price" id='mybidcount'>
-								<a target="_blank" href=" javascript:if(confirm('http://wpa.qq.com/msgrd?v=3&uin=1850754583</a>&site=qq&menu=yes  \n\nكτݾϞרԃ Teleport Ultra Ђ՘, ӲΪ ̼ˇһٶӑޭѻվ֣þԎǷƅԽڦղӎ˽ƅԽք·޶ַ֘c(كϵͳք Teleport Ultra ˘ղˇࠉѡք; ӎݻЮĿ˴є, θçqӇc)  \n\nţЫ՚ؾϱǷʏղߪ̼?'))window.location='http://wpa.qq.com/msgrd?v=3&uin=1850754583</a>&site=qq&menu=yes'" tppabs="http://wpa.qq.com/msgrd?v=3&uin=1850754583</a>&site=qq&menu=yes"><img border="0" src=" ../../pub.idqqimg.com/qconn/wpa/button/button_20.gif" tppabs="http://wpa.qq.com/pa?p=2:1850754583:42" alt="点击这里开始咨询" title="点击这里开始咨询"></a> 
-							</span></td>
-						</tr>	
-
-						<tr>
-							<td width="30%">&nbsp;</td>
-
-							<td align="left">		
-							
-								<div class="bidButton auctionButton cb" style="text-align:left;">
-									<span class="button">
-										<span class="first-child">
-										<a class="bidImgButton button_seller" href="shop-14.html" tppabs="http://game.haopai365.com/app/shop-14.html" target="_blank" title="进入卖家店铺" onFocus="this.blur();"></a>
-										</span>
-									</span>
-								</div>			
+								</div>
 								
+								<div class="detail notice" style="margin-left:15px;">
+									<h3>
+										<span >大区：<?php echo ($vo["dq"]); ?> | 职业：<?php echo ($vo["zy"]); ?> | 部件：<?php echo ($vo["bj"]); ?></span>
+
+									</h3>
+									<strong>起拍价：<?php echo ($vo["price"]); ?></strong><br />
+									<span class="space">商品名称：<strong class="purchase space"><?php echo ($vo["eqname"]); ?></strong></span>
+									卖家：<span style="color:red"><?php echo ($vo["username"]); ?></span><br />
+									<span>商品简介：<?php echo ($vo["eqdes"]); ?></span>
+								</div>
 							</td>
-						</tr>												
-						</table>
-					</div>	
+							
+							<td class="tc">		
+								<span>
+									<?php if($vo["endtime"] < time()): ?>已结束
+									<?php elseif(($vo["starttime"] <= time() and $vo["endtime"] > time())): ?> <a href="__URL__/info/id/<?php echo ($vo["id"]); ?>">竞拍中</a>
+									<?php else: ?>即将竞拍<?php endif; ?>
+								</span>
+							</td>
+						</tr><?php endforeach; endif; ?>
+
+				
+				<!--End: iterator  -->
+				
+				<tr>
+				<td colspan="3">
+					<!-- .pages -->
+						<?php echo ($page); ?>
+					<!-- .pages end -->
+				</td>
+				</tr>
+				</table>
+				
+				
+				<!-- games nav start -->
+				<div style="position:absolute;top:0px;display:none;" id="searchPangel">
+<div id="games" class="gamesNav" style="display:none;">
+    	<h3 class="navHeader">&nbsp;</h3>
+        <div class="other-links">
+                  <a title="关闭"  href="javascript:closePanelDef(1);">关闭</a>
+        </div>
+              
+              <ul class="wordIndex" id="wordIndex">
+                      <li class="first hot" id="hot">热</li>
+                       <li id="1" >A</li>
+<li id="2" >B</li>
+<li id="3" >C</li>
+<li id="4" >D</li>
+<li id="5" >E</li>
+<li id="6" >F</li>
+<li id="7" >G</li>
+<li id="8" >H</li>
+<li id="9" >I</li>
+<li id="10" >J</li>
+<li id="11" >K</li>
+<li id="12" >L</li>
+<li id="13" >M</li>
+<li id="14" >N</li>
+<li id="15" >O</li>
+<li id="16" >P</li>
+<li id="17" >Q</li>
+<li id="18" >R</li>
+<li id="19" >S</li>
+<li id="20" >T</li>
+<li id="21" >U</li>
+<li id="22" >V</li>
+<li id="23" >W</li>
+<li id="24" >X</li>
+<li id="25" >Y</li>
+<li id="26" >Z</li>
+<li id="27" >其他</li>
+
+        </ul>
+    	
+    
+    <div class="navBody" id="navBody" style="display: block;" >
+         <ul id="gamesItems">
+                
+                		   <li pid="1" id="31">艾尔之光</li>
+                		
+                		   <li pid="2" id="42">白蛇传说</li>
+                		
+                		   <li pid="3" id="52">赤壁</li>
+                		
+                		   <li pid="3" id="54">传奇3</li>
+                		
+                		   <li pid="4" id="79">地下城与勇士</li>
+                		
+                		   <li pid="4" id="80">大唐无双</li>
+                		
+                		   <li pid="4" id="83">大话西游Ⅲ</li>
+                		
+                		   <li pid="7" id="140">古域OL</li>
+                		
+                		   <li pid="10" id="223">剑侠情缘Ⅲ</li>
+                		
+                		   <li pid="10" id="225">巨人</li>
+                		
+                		   <li pid="10" id="226">九阴真经</li>
+                		
+                		   <li pid="12" id="241">龙之谷</li>
+                		
+                		   <li pid="12" id="244">绿色征途</li>
+                		
+                		   <li pid="13" id="276">魔兽世界(国服)</li>
+                		
+                		   <li pid="13" id="277">魔域</li>
+                		
+                		   <li pid="13" id="278">梦幻西游</li>
+                		
+                		   <li pid="14" id="324">诺亚传说</li>
+                		
+                		   <li pid="17" id="334">倩女幽魂</li>
+                		
+                		   <li pid="17" id="338">QQ西游</li>
+                		
+                		   <li pid="17" id="339">QQ仙侠传</li>
+                		
+                		   <li pid="19" id="385">神魔大陆</li>
+                		
+                		   <li pid="20" id="452">天下3</li>
+                		
+                		   <li pid="23" id="497">完美国际</li>
+                		
+                		   <li pid="23" id="503">万王之王3</li>
+                		
+                		   <li pid="23" id="513">完美传奇</li>
+                		
+                		   <li pid="24" id="518">新梦幻诛仙</li>
+                		
+                		   <li pid="24" id="521">星辰变OL</li>
+                		
+                		   <li pid="25" id="557">永恒之塔</li>
+                		
+                		   <li pid="25" id="574">英雄联盟</li>
+                		
+                		   <li pid="26" id="575">诛仙前传</li>
+                		
+                		   <li pid="26" id="576">征途2</li>
+                		
+                		   <li pid="26" id="580">卓越之剑2</li>
+                		
+         </ul>
+    </div>
+</div>		
+
+<div id="areaNav"  class="gamesNav" style="display:none;">
+    	<h3 class="navHeader">选择游戏区</h3>
+        <div class="other-links">
+             <a title="关闭"  href="javascript:closePanelDef(2);">关闭</a>
+        </div>
+              
+    
+    <div class="navBody" id="areaItemsParent">
+        <ul id="areaItems">
+        </ul>
+    </div>
+</div>		
 	
-				</div> -->
-										<img  src="__PUBLIC__/Home/Images/a-d/95-sale.jpg" style="width:278px;height:254px; margin-left:4px; border:1px solid red"/>
+<div id="serverNav"  class="gamesNav" style="display:none;">
+    	<h3 class="navHeader">选择游戏服务器</h3>
+        <div class="other-links">
+             <a title="关闭"  href="javascript:closePanelDef(3);">关闭</a>
+        </div>
+              
+    
+    <div class="navBody" id="serverNavParent">
+        <ul id="serverItems">
+        </ul>
+    </div>
+</div>			
 
-			</div>
 
-			<!-- #bidInfo end -->
-			
-		</div>
-		<!-- Auction Information end -->
-
-
+<div id="productTypeNav"  class="gamesNav" style="display:none;">
+    	<h3 class="navHeader">选择物品</h3>
+        <div class="other-links">
+             <a title="关闭"  href="javascript:closePanelDef(0);">关闭</a>
+        </div>
+              
+    
+    <div class="navBody">
+        <ul>
+	    	
+            		<li id="1">点卡</li>
+					
+            		<li id="2">游戏币</li>
+					
+            		<li id="3">代练</li>
+					
+            		<li id="4">装备</li>
+					
+            		<li id="5">武器</li>
+					
+            		<li id="6">饰品</li>
+					
+            		<li id="7">坐骑</li>
+					
+            		<li id="8">其他道具</li>
+					
+        </ul>
+    </div>
+</div>		
+	
+</div>
 		
-		<!-- product detail -->
-		<div class="container cb">
-			<div class="tabview">
-				<h2 class="title fl">详细介绍</h2>
+</div>
+				<!-- games nav end -->
+				
 			</div>
-
-			<div id="description" class="content">
-		
-				<div class="cb">
-				  <?php echo ($eqdes); ?>
-				</div>
-			</div>
+	
 		</div>
-		<!-- product detail end -->
+		<!-- #productList end -->
 
 	</div>
-	<!-- .mainbody -->
-	
+	<!-- #auctionDetail end -->
+
 	
 	
 	<!-- #footer -->
